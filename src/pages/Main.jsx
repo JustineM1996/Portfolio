@@ -50,7 +50,7 @@ export const MainPage = () => {
               style={{
                 fontSize: "60px",
                 fontWeight: "bold",
-                marginTop: -20,
+                marginBottom: -15,
                 color: token.colorTextHeading,
                 display: "flex",
               }}
@@ -164,25 +164,21 @@ export const MainPage = () => {
             <InfoCard
               image="./dev-icon/react-js.png"
               title="ReactJs"
-              desc="is a front-end JavaScript library that is free and open-source and is used to create user interfaces using components."
               href="https://react.dev/"
             />
             <InfoCard
               image="./dev-icon/node-js.png"
               title="Node.js"
-              desc="Node.js is an event-driven, asynchronous JavaScript runtime that's meant to help create network apps that scale."
               href="https://nodejs.org/en"
             />
             <InfoCard
               image="./dev-icon/ts.png"
               title="TypeScript"
-              desc="To facilitate a more seamless interface with your editor, TypeScript extends JavaScript with new syntax. Find mistakes in your editor early on."
               href="https://www.typescriptlang.org/"
             />
             <InfoCard
               image="./dev-icon/js.png"
               title="JavaScript"
-              desc="Text-based JavaScript is a programming language that may be used on the client side as well as the server side."
               href="https://www.javascript.com/"
             />
           </div>
@@ -268,14 +264,12 @@ export const MainPage = () => {
               image="./company-icon/gp-next-solution-inc.png"
               title="Software Engineer"
               date="Nov 2021 - Jan 2023"
-              desc="I created a module on the system for GP Next Solution, Inc., which is an advertising system. I used to create this web application for Sublime Text 3, PHP, JavaScript, MySQL, and GitHub for the repository."
               href="https://web.facebook.com/gpnext2020/?_rdc=1&_rdr"
             />
             <WorkInfoCard
               image="./company-icon/lloyd-laboratoties-inc.jpeg"
               title="Junior Programmer"
               date="June 2023 - Dec 2023"
-              desc="I created a module on the system for Lloyd Laboratories, Inc., which is an inventory system. I used Visual Studio Code, React JS, Node.js, SQL, the REST API, and GitHub for the repository."
               href="https://lloydlab.com/"
             />
           </div>
