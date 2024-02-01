@@ -2,7 +2,8 @@ import { Footer } from './footer';
 
 import { 
     InfoCard,
-    WorkInfoCard 
+    WorkInfoCard,
+    ProjectsInfoCard
 } from './infocard';
 
 import {
@@ -17,6 +18,7 @@ export {
     Find,
     InfoCard,
     WorkInfoCard,
+    ProjectsInfoCard,
     Footer, 
 };
 

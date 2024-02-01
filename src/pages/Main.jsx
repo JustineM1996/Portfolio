@@ -10,6 +10,7 @@ import {
 import {
   InfoCard,
   WorkInfoCard,
+  ProjectsInfoCard,
 } from "../components"
 
 export const MainPage = () => {
@@ -83,7 +84,7 @@ export const MainPage = () => {
           </div>
           <div
             style={{
-              fontSize: "30px",
+              fontSize: "40px",
               fontWeight: "bold",
               color: token.colorTextHeading,
               display: "flex",
@@ -93,11 +94,11 @@ export const MainPage = () => {
           </div>
           <p
             style={{
-              fontSize: "14px",
+              fontSize: "16px",
               color: token.colorTextSecondary,
               lineHeight: "22px",
               width: "85%",
-              marginBottom: 32,
+              marginBottom: 50,
             }}
           >
             I'm Justine M. Hilario 27 years old from City of Malolos, Bulacan.
@@ -143,10 +144,10 @@ export const MainPage = () => {
           </div>
           <div
             style={{
-              fontSize: "30px",
+              fontSize: "40px",
               fontWeight: "bold",
               color: token.colorTextHeading,
-              marginBottom: 32,
+              marginBottom: 50,
               display: "flex",
             }}
           >
@@ -193,7 +194,7 @@ export const MainPage = () => {
         <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
           <div
             style={{
-              fontSize: "30px",
+              fontSize: "40px",
               fontWeight: "bold",
               color: token.colorTextHeading,
               display: "flex",
@@ -203,11 +204,11 @@ export const MainPage = () => {
           </div>
           <p
             style={{
-              fontSize: "14px",
+              fontSize: "16px",
               color: token.colorTextSecondary,
               lineHeight: "22px",
               marginTop: 16,
-              marginBottom: 32,
+              marginBottom: 50,
               width: "85%"
             }}
           >
@@ -223,16 +224,18 @@ export const MainPage = () => {
               height: "100vh auto"
             }}
           >
-            <InfoCard
+            <ProjectsInfoCard
               image="./project-icon/peso.png"
+              image2="./project-icon/peso-page.png"
               title="P E S O"
-              desc="Description"
+              desc="It is an online employment platform that lists employers, openings, and announcements."
               href=""
             />
-            <InfoCard
+            <ProjectsInfoCard
               image="./project-icon/soon.png"
+              image2=""
               title="Coming soon"
-              desc="Description"
+              desc=""
               href=""
             />
           </div>
@@ -244,10 +247,10 @@ export const MainPage = () => {
         <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
           <div
             style={{
-              fontSize: "30px",
+              fontSize: "40px",
               fontWeight: "bold",
               color: token.colorTextHeading,
-              marginBottom: 32,
+              marginBottom: 50,
               display: "flex",
             }}
           >
