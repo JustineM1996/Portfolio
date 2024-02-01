@@ -64,7 +64,10 @@ export const InfoCard = ({ title, href, desc, image }) => {
 
         <div
             style={{
-                fontSize: "16px",
+                display: "flex",
+                gap: "4px",
+                alignItems: "center",
+                fontSize: "14px",
                 color: token.colorTextSecondary,
                 textAlign: "justify",
                 lineHeight: "22px",
@@ -150,7 +153,10 @@ export const WorkInfoCard = ({ title, date, href, image, desc }) => {
 
             <div
                 style={{
-                    fontSize: "16px",
+                    display: "flex",
+                    gap: "4px",
+                    alignItems: "center",
+                    fontSize: "14px",
                     color: token.colorTextSecondary,
                     textAlign: "justify",
                     lineHeight: "22px",

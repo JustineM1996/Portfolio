@@ -6,7 +6,7 @@ import {
 
 import {
   defaultSettings,
-  menu,
+  //menu,
   routes
 } from './configs';
 
@@ -37,7 +37,7 @@ function App() {
     >
       <ProLayout
 
-        {...menu}
+        // {...menu}
 
         location={location}
 

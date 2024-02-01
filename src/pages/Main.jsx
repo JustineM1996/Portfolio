@@ -25,22 +25,22 @@ export const MainPage = () => {
     <>
       <PageContainer title={false}>
       {/* M A I N . */}
-        <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
+        <Flex  justify={"center"} align={"flex-start"} vertical style={{height: "100vh"}}>
           <div
             style={{
               width: "100%",
               backgroundPosition: "100% -30%",
               backgroundRepeat: "no-repeat",
               backgroundSize: "274px auto",
-              backgroundImage:
-                "url('././background/cta-image.webp')"
+              backgroundImage:"url('././background/cta-image.webp')",
             }}
           >
             <div
               style={{
                 fontSize: "50px",
                 fontWeight: "bold",
-                color: token.colorTextHeading
+                color: token.colorTextHeading,
+                display: "flex",
               }}
             >
               HI, I'M
@@ -51,6 +51,7 @@ export const MainPage = () => {
                 fontWeight: "bold",
                 marginTop: -20,
                 color: token.colorTextHeading,
+                display: "flex",
               }}
             >
               JUSTINE M.
@@ -74,7 +75,8 @@ export const MainPage = () => {
           <div
             style={{
               fontSize: "20px",
-              color: token.colorTextHeading
+              color: token.colorTextHeading,
+              display: "flex",
             }}
           >
             INTRODUCTION
@@ -83,7 +85,8 @@ export const MainPage = () => {
             style={{
               fontSize: "30px",
               fontWeight: "bold",
-              color: token.colorTextHeading
+              color: token.colorTextHeading,
+              display: "flex",
             }}
           >
             O V E R V I E W .
@@ -99,9 +102,8 @@ export const MainPage = () => {
           >
             I'm Justine M. Hilario 27 years old from City of Malolos, Bulacan.
             May recent job is Jr. Software Engineer and Jr. Prorammer for almost 2 years.
-            <p>
+            <dr/>
              As of now I am still willing to learn to widen my knowledge and skills when it comes to programming.
-            </p>
           </p>
           <div
             style={{
@@ -133,7 +135,8 @@ export const MainPage = () => {
           <div
             style={{
               fontSize: "20px",
-              color: token.colorTextHeading
+              color: token.colorTextHeading,
+              display: "flex",
             }}
           >
             MY SKILLS
@@ -144,6 +147,7 @@ export const MainPage = () => {
               fontWeight: "bold",
               color: token.colorTextHeading,
               marginBottom: 32,
+              display: "flex",
             }}
           >
             T E C H N O L O G I E S .
@@ -191,7 +195,8 @@ export const MainPage = () => {
             style={{
               fontSize: "30px",
               fontWeight: "bold",
-              color: token.colorTextHeading
+              color: token.colorTextHeading,
+              display: "flex",
             }}
           >
             P R O J E C T S .
@@ -243,6 +248,7 @@ export const MainPage = () => {
               fontWeight: "bold",
               color: token.colorTextHeading,
               marginBottom: 32,
+              display: "flex",
             }}
           >
             W O R K - E X P E R I E N C E .
