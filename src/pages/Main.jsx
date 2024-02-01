@@ -102,7 +102,7 @@ export const MainPage = () => {
             }}
           >
             I'm Justine M. Hilario 27 years old from City of Malolos, Bulacan.
-            May recent job is Jr. Software Engineer and Jr. Prorammer for almost 2 years.
+            My recent job is Jr. Software Engineer and Jr. Prorammer for almost 2 years.
             <dr/>
              As of now I am still willing to learn to widen my knowledge and skills when it comes to programming.
           </p>
