@@ -6,11 +6,13 @@ import {
 import {
     Facebook,
     Github,
+    Find,
 } from './rightcontent';
 
 export {
     Facebook,
     Github,
+    Find,
     InfoCard,
     WorkInfoCard,
 };

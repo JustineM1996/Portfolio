@@ -13,6 +13,7 @@ import {
 import {
   Facebook,
   Github,
+  Find
 } from './components';
 
 import Router from './routes.js';
@@ -82,6 +83,7 @@ function App() {
           if (props.isMobile) return []
           if (typeof window === "undefined") return []
           return [
+            <Find key="me"/>,
             <Facebook key="facebook"/>,
             <Github key="github"/>,
             ]

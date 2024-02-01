@@ -34,7 +34,7 @@ export const MainPage = () => {
               backgroundRepeat: "no-repeat",
               backgroundSize: "274px auto",
               backgroundImage:
-                "url('./cta-image.webp')"
+                "url('././background/cta-image.webp')"
             }}
           >
             <div
@@ -95,11 +95,24 @@ export const MainPage = () => {
               color: token.colorTextSecondary,
               lineHeight: "22px",
               marginTop: 16,
-              marginBottom: 32,
-              width: "80%"
+              marginBottom: 5,
+              width: "60%"
             }}
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea quaerat alias accusamus voluptas autem! Alias odit voluptates in totam vitae dignissimos minus eaque culpa unde tempore dolore aperiam obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde veniam dolorum ipsum doloribus.
+            I'm Justine M. Hilario 27 years old from City of Malolos, Bulacan.
+            May recent job is Jr. Software Engineer and Jr. Prorammer for almost 2 years.
+          </p>
+          <p
+            style={{
+              fontSize: "14px",
+              color: token.colorTextSecondary,
+              lineHeight: "22px",
+              marginTop: 16,
+              marginBottom: 32,
+              width: "60%"
+            }}
+          >
+            As of now I am still willing to learn to widen my knowledge and skills when it comes to programming.
           </p>
           <div
             style={{
@@ -140,7 +153,8 @@ export const MainPage = () => {
             style={{
               fontSize: "30px",
               fontWeight: "bold",
-              color: token.colorTextHeading
+              color: token.colorTextHeading,
+              marginBottom: 32,
             }}
           >
             T E C H N O L O G I E S .
@@ -150,7 +164,6 @@ export const MainPage = () => {
               display: "flex",
               flexWrap: "wrap",
               gap: 16,
-              marginTop: 20,
               width: "100%"
             }}
           >
@@ -175,7 +188,7 @@ export const MainPage = () => {
             <InfoCard
               image="./dev-icon/js.png"
               title="JavaScript"
-              desc="is a programming language that lets you do pretty much anything, including manipulate multimedia, animate graphics, and generate dynamically changing content."
+              desc="Text-based JavaScript is a programming language that may be used on the client side as well as the server side."
               href="https://www.javascript.com/"
             />
           </div>
@@ -201,10 +214,11 @@ export const MainPage = () => {
               lineHeight: "22px",
               marginTop: 16,
               marginBottom: 32,
-              width: "80%"
+              width: "60%"
             }}
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea quaerat alias accusamus voluptas autem! Alias odit voluptates in totam vitae dignissimos minus eaque culpa unde tempore dolore aperiam obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde veniam dolorum ipsum doloribus.
+            These projects provide practical examples of some of my work along with interactive demonstrations that demonstrate the skill, brief explanations, and links to source material. 
+            They show that I can handle challenging issues, adapt to new technologies, and lead projects successfully.
           </p>
           <div
             style={{
@@ -221,7 +235,7 @@ export const MainPage = () => {
               href=""
             />
             <InfoCard
-              image="./soon.png"
+              image="./project-icon/soon.png"
               title="Coming soon"
               desc="Description"
               href=""
@@ -237,23 +251,12 @@ export const MainPage = () => {
             style={{
               fontSize: "30px",
               fontWeight: "bold",
-              color: token.colorTextHeading
-            }}
-          >
-            W O R K E X P E R I E N C E .
-          </div>
-          <p
-            style={{
-              fontSize: "14px",
-              color: token.colorTextSecondary,
-              lineHeight: "22px",
-              marginTop: 16,
+              color: token.colorTextHeading,
               marginBottom: 32,
-              width: "80%"
             }}
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea quaerat alias accusamus voluptas autem! Alias odit voluptates in totam vitae dignissimos minus eaque culpa unde tempore dolore aperiam obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde veniam dolorum ipsum doloribus.
-          </p>
+            W O R K - E X P E R I E N C E .
+          </div>
           <div
             style={{
               display: "flex",
@@ -266,12 +269,14 @@ export const MainPage = () => {
               image="./company-icon/gp-next-solution-inc.png"
               title="Software Engineer"
               date="Nov 2021 - Jan 2023"
+              desc="I created a module on the system for GP Next Solution, Inc., which is an advertising system. I used to create this web application for Sublime Text 3, PHP, JavaScript, MySQL, and GitHub for the repository."
               href="https://web.facebook.com/gpnext2020/?_rdc=1&_rdr"
             />
             <WorkInfoCard
               image="./company-icon/lloyd-laboratoties-inc.jpeg"
               title="Junior Programmer"
               date="June 2023 - Dec 2023"
+              desc="I created a module on the system for Lloyd Laboratories, Inc., which is an inventory system. I used Visual Studio Code, React JS, Node.js, SQL, the REST API, and GitHub for the repository."
               href="https://lloydlab.com/"
             />
           </div>

@@ -80,7 +80,7 @@ export const InfoCard = ({ title, href, desc, image }) => {
 
 }
 
-export const WorkInfoCard = ({ title, date, href, image }) => {
+export const WorkInfoCard = ({ title, date, href, image, desc }) => {
 
     const { useToken } = theme
     const { token } = useToken()
@@ -148,6 +148,18 @@ export const WorkInfoCard = ({ title, date, href, image }) => {
 
             </div>
 
+            <div
+                style={{
+                    fontSize: "16px",
+                    color: token.colorTextSecondary,
+                    textAlign: "justify",
+                    lineHeight: "22px",
+                    marginBottom: 8,
+                }}
+            >
+                {desc}
+            </div>
+            
         </div>
     )
 

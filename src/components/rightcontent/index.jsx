@@ -36,3 +36,15 @@ export const Github = () => {
     </div>
   )
 }
+
+export const Find = () => {
+  return (
+    <div
+      style={{
+        display: "flex",
+      }}
+    >
+      Find me on
+    </div>
+  )
+}
