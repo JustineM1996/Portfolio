@@ -8,7 +8,7 @@ export const defaultSettings = {
   fixSiderbar: true,
   colorWeak: false,
   pwa: true,
-  title: "Portfolio",
+  title: false,
   logo: false,
   iconfontUrl: false,
 }

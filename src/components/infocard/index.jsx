@@ -35,8 +35,8 @@ export const InfoCard = ({ title, href, desc, image }) => {
 
             <div
                 style={{
-                    width: 48,
-                    height: 48,
+                    width: 60,
+                    height: 60,
                     lineHeight: "22px",
                     backgroundSize: "100%",
                     textAlign: "center",
@@ -45,37 +45,111 @@ export const InfoCard = ({ title, href, desc, image }) => {
                     fontWeight: "bold"
                 }}
             >
-                <Image src={image}/>
+                <Image src={image} style={{borderRadius: 2,}}/>
             </div>
 
             <div
                 style={{
-                    fontSize: "16px",
+                    fontSize: "20px",
                     color: token.colorText,
                     paddingBottom: 8
                 }}
             >
-                {title}
+                <a href={href} target="_blank" rel="noreferrer" style={{color: token.colorText,}} >
+                    {title}
+                </a>
             </div>
 
         </div>
 
         <div
             style={{
-                fontSize: "14px",
+                fontSize: "16px",
                 color: token.colorTextSecondary,
                 textAlign: "justify",
                 lineHeight: "22px",
-                marginBottom: 8
+                marginBottom: 8,
             }}
         >
             {desc}
         </div>
 
-        <a href={href} target="_blank" rel="noreferrer">
-           {/* Link {">"} */}
-        </a>
-
     </div>
+
   )
+
 }
+
+export const WorkInfoCard = ({ title, date, href, image }) => {
+
+    const { useToken } = theme
+    const { token } = useToken()
+  
+    return (
+        <div
+            style={{
+                backgroundColor: token.colorBgContainer,
+                boxShadow: token.boxShadow,
+                borderRadius: "8px",
+                fontSize: "14px",
+                color: token.colorTextSecondary,
+                lineHeight: "22px",
+                padding: "16px 19px",
+                minWidth: "220px",
+                flex: 1
+            }}
+        >
+  
+            <div
+                style={{
+                    display: "flex",
+                    gap: "4px",
+                    alignItems: "center"
+                }}
+            >
+  
+                <div
+                    style={{
+                        width: 80,
+                        height: 80,
+                        lineHeight: "22px",
+                        backgroundSize: "100%",
+                        padding: "8px 16px 16px 12px",
+                    }}
+                >
+                    <Image src={image} style={{borderRadius: 2,}}/>
+                </div>
+    
+                <div
+                    style={{
+                        fontSize: "20px",
+                        color: token.colorText,
+                        paddingBottom: 8,
+                        marginTop: 10
+                    }}
+                >
+                    <a href={href} target="_blank" rel="noreferrer" style={{color: token.colorText,}} >
+                        {title}
+                    </a>
+
+                    <div
+                        style={{
+                            fontSize: "14px",
+                            color: token.colorTextSecondary,
+                            textAlign: "justify",
+                            lineHeight: "28px",
+                            marginBottom: 8
+                        }}
+                    >
+                        {date}
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    )
+
+}
+  

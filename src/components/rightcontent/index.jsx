@@ -36,15 +36,3 @@ export const Github = () => {
     </div>
   )
 }
-
-export const Name = () => {
-  return (
-    <div
-      style={{
-        display: "flex",
-      }}
-    >
-      Justine M.
-    </div>
-  )
-}

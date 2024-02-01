@@ -13,7 +13,6 @@ import {
 import {
   Facebook,
   Github,
-  Name,
 } from './components';
 
 import Router from './routes.js';
@@ -29,7 +28,6 @@ function App() {
   
   return (
     <div
-      id="test-pro-layout"
       style={{
         height: "100vh",
         overflow: "auto"
@@ -76,7 +74,7 @@ function App() {
 
         token={{
           header: {
-            colorBgMenuItemSelected: "rgba(0,0,0,0.04)"
+            colorBgMenuItemSelected: "gray"
           }
         }}
 
@@ -86,7 +84,6 @@ function App() {
           return [
             <Facebook key="facebook"/>,
             <Github key="github"/>,
-            <Name key="name"/>,         
             ]
         }}      
 
