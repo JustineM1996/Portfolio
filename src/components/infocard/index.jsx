@@ -96,7 +96,7 @@ export const WorkInfoCard = ({ title, date, href, image }) => {
                 lineHeight: "22px",
                 padding: "16px 19px",
                 minWidth: "220px",
-                flex: 1
+                flex: 1,
             }}
         >
   
@@ -104,7 +104,7 @@ export const WorkInfoCard = ({ title, date, href, image }) => {
                 style={{
                     display: "flex",
                     gap: "4px",
-                    alignItems: "center"
+                    alignItems: "center",
                 }}
             >
   

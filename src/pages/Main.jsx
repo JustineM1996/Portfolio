@@ -3,7 +3,8 @@ import React from "react"
 import { PageContainer } from "@ant-design/pro-components"
 
 import {
-  theme
+  theme,
+  Flex
 } from "antd"
 
 import {
@@ -15,22 +16,20 @@ export const MainPage = () => {
 
   const { token } = theme.useToken();
 
+  const boxStyle = {
+    height: '100vh',
+    width: "100%",
+  };
+
   return (
     <>
-      <div
-        style={{
-          height: "100vh",
-          overflow: "auto"
-        }}
-      >
-        <PageContainer title={false}
-          style={{
-            marginTop: "18vh",
-          }}
-        >
-          {/* M A I N . */}
+
+      <PageContainer title={false}>
+      {/* M A I N . */}
+        <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
           <div
             style={{
+              width: "100%",
               backgroundPosition: "100% -30%",
               backgroundRepeat: "no-repeat",
               backgroundSize: "274px auto",
@@ -47,7 +46,6 @@ export const MainPage = () => {
             >
               HI, I'M
             </div>
-
             <div
               style={{
                 fontSize: "60px",
@@ -58,7 +56,6 @@ export const MainPage = () => {
             >
               JUSTINE M.
             </div>
-
             <div
               style={{
                 fontSize: "20px",
@@ -68,23 +65,13 @@ export const MainPage = () => {
             >
               Software Engineer {"</>, <_"}
             </div>
-
           </div>
-        </PageContainer>
-      </div>
+        </Flex>
+      </PageContainer>
 
-      <div
-        style={{
-          height: "100vh",
-          overflow: "auto"
-        }}
-      >
-        <PageContainer title={false}
-          style={{
-            marginTop: "18vh",
-          }}
-        >
-          {/* O V E R V I E W . */}
+      <PageContainer title={false}>
+      {/* O V E R V I E W . */}
+        <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
           <div
             style={{
               fontSize: "20px",
@@ -93,17 +80,15 @@ export const MainPage = () => {
           >
             INTRODUCTION
           </div>
-
           <div
             style={{
-              fontSize: "35px",
+              fontSize: "30px",
               fontWeight: "bold",
               color: token.colorTextHeading
             }}
           >
             O V E R V I E W .
           </div>
-
           <p
             style={{
               fontSize: "14px",
@@ -116,12 +101,12 @@ export const MainPage = () => {
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea quaerat alias accusamus voluptas autem! Alias odit voluptates in totam vitae dignissimos minus eaque culpa unde tempore dolore aperiam obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde veniam dolorum ipsum doloribus.
           </p>
-          
           <div
             style={{
               display: "flex",
               flexWrap: "wrap",
-              gap: 16
+              gap: 16,
+              width: "100%"
             }}
           >
             <InfoCard
@@ -137,23 +122,12 @@ export const MainPage = () => {
               href="https://www.coursera.org/articles/back-end-developer"
             />
           </div>
-        </PageContainer>
-      </div>
+        </Flex>
+      </PageContainer>
 
-      <div
-        style={{
-          height: "100vh",
-          overflow: "auto"
-        }}
-      >
-        <PageContainer title={false}
-          style={{
-            marginTop: "18vh",
-          }}
-        >
-
-          {/* T E C H N O L O G I E S . */}
-          
+      <PageContainer title={false}>
+      {/* T E C H N O L O G I E S . */}
+        <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
           <div
             style={{
               fontSize: "20px",
@@ -162,35 +136,22 @@ export const MainPage = () => {
           >
             MY SKILLS
           </div>
-
           <div
             style={{
-              fontSize: "35px",
+              fontSize: "30px",
               fontWeight: "bold",
               color: token.colorTextHeading
             }}
           >
             T E C H N O L O G I E S .
           </div>
-
-          <p
-            style={{
-              fontSize: "14px",
-              color: token.colorTextSecondary,
-              lineHeight: "22px",
-              marginTop: 16,
-              marginBottom: 32,
-              width: "80%"
-            }}
-          >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea quaerat alias accusamus voluptas autem! Alias odit voluptates in totam vitae dignissimos minus eaque culpa unde tempore dolore aperiam obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde veniam dolorum ipsum doloribus.
-          </p>
-
           <div
             style={{
               display: "flex",
               flexWrap: "wrap",
-              gap: 16
+              gap: 16,
+              marginTop: 20,
+              width: "100%"
             }}
           >
             <InfoCard
@@ -218,33 +179,21 @@ export const MainPage = () => {
               href="https://www.javascript.com/"
             />
           </div>
-        </PageContainer>
-      </div>
+        </Flex>
+      </PageContainer>
 
-      <div
-        style={{
-          height: "100vh",
-          overflow: "auto"
-        }}
-      >
-        <PageContainer title={false}
-          style={{
-            marginTop: "18vh",
-          }
-        }>
-
-          {/* P R O J E C T S . */}
-
+      <PageContainer title={false}>
+      {/* P R O J E C T S . */}
+        <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
           <div
             style={{
-              fontSize: "35px",
+              fontSize: "30px",
               fontWeight: "bold",
               color: token.colorTextHeading
             }}
           >
             P R O J E C T S .
           </div>
-
           <p
             style={{
               fontSize: "14px",
@@ -261,7 +210,8 @@ export const MainPage = () => {
             style={{
               display: "flex",
               flexWrap: "wrap",
-              gap: 16
+              gap: 16,
+              width: "100%"
             }}
           >
             <InfoCard
@@ -277,33 +227,21 @@ export const MainPage = () => {
               href=""
             />
           </div>
-        </PageContainer>
-      </div>
-        
-      <div
-        style={{
-          height: "100vh",
-          overflow: "auto"
-        }}
-      >
-        <PageContainer title={false}
-          style={{
-            marginTop: "18vh",
-          }}
-        >
+        </Flex>
+      </PageContainer>
 
-        {/* W O R K E X P E R I E N C E . */}
-
+      <PageContainer title={false}>
+      {/* W O R K E X P E R I E N C E . */}
+        <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
           <div
             style={{
-              fontSize: "35px",
+              fontSize: "30px",
               fontWeight: "bold",
               color: token.colorTextHeading
             }}
           >
             W O R K E X P E R I E N C E .
           </div>
-
           <p
             style={{
               fontSize: "14px",
@@ -320,7 +258,8 @@ export const MainPage = () => {
             style={{
               display: "flex",
               flexWrap: "wrap",
-              gap: 16
+              gap: 16,
+              width: "100%"
             }}
           >
             <WorkInfoCard
@@ -336,8 +275,8 @@ export const MainPage = () => {
               href="https://lloydlab.com/"
             />
           </div>
-        </PageContainer>
-      </div>
+        </Flex>
+      </PageContainer>
 
     </>
   )
