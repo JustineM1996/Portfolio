@@ -13,7 +13,8 @@ import {
 import {
   Facebook,
   Github,
-  Find
+  Find,
+  Footer, 
 } from './components';
 
 import Router from './routes.js';
@@ -80,14 +81,28 @@ function App() {
         }}
 
         actionsRender={props => {
-          if (props.isMobile) return []
-          if (typeof window === "undefined") return []
+          if (props.isMobile) return [
+            <Find key="me"/>,
+            <Facebook key="facebook"/>,
+            <Github key="github"/>,
+          ]
+          if (typeof window === "undefined") return [
+            <Find key="me"/>,
+            <Facebook key="facebook"/>,
+            <Github key="github"/>,
+          ]
           return [
             <Find key="me"/>,
             <Facebook key="facebook"/>,
             <Github key="github"/>,
             ]
         }}      
+
+        footerRender={() => {
+          return (
+          <Footer />
+          )
+        }}
 
         {...defaultSettings}
 

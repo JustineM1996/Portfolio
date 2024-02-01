@@ -17,13 +17,12 @@ export const MainPage = () => {
   const { token } = theme.useToken();
 
   const boxStyle = {
-    height: '100vh',
     width: "100%",
+    height: "auto"
   };
 
   return (
     <>
-
       <PageContainer title={false}>
       {/* M A I N . */}
         <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
@@ -51,7 +50,7 @@ export const MainPage = () => {
                 fontSize: "60px",
                 fontWeight: "bold",
                 marginTop: -20,
-                color: token.colorTextHeading
+                color: token.colorTextHeading,
               }}
             >
               JUSTINE M.
@@ -59,8 +58,8 @@ export const MainPage = () => {
             <div
               style={{
                 fontSize: "20px",
-                width: "50%",
-                color: token.colorTextHeading
+                width: "100%",
+                color: token.colorTextHeading,
               }}
             >
               Software Engineer {"</>, <_"}
@@ -71,7 +70,7 @@ export const MainPage = () => {
 
       <PageContainer title={false}>
       {/* O V E R V I E W . */}
-        <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
+        <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical >
           <div
             style={{
               fontSize: "20px",
@@ -94,32 +93,22 @@ export const MainPage = () => {
               fontSize: "14px",
               color: token.colorTextSecondary,
               lineHeight: "22px",
-              marginTop: 16,
-              marginBottom: 5,
-              width: "60%"
+              width: "85%",
+              marginBottom: 32,
             }}
           >
             I'm Justine M. Hilario 27 years old from City of Malolos, Bulacan.
             May recent job is Jr. Software Engineer and Jr. Prorammer for almost 2 years.
-          </p>
-          <p
-            style={{
-              fontSize: "14px",
-              color: token.colorTextSecondary,
-              lineHeight: "22px",
-              marginTop: 16,
-              marginBottom: 32,
-              width: "60%"
-            }}
-          >
-            As of now I am still willing to learn to widen my knowledge and skills when it comes to programming.
+            <p>
+             As of now I am still willing to learn to widen my knowledge and skills when it comes to programming.
+            </p>
           </p>
           <div
             style={{
               display: "flex",
               flexWrap: "wrap",
               gap: 16,
-              width: "100%"
+              width: "100%",
             }}
           >
             <InfoCard
@@ -164,7 +153,7 @@ export const MainPage = () => {
               display: "flex",
               flexWrap: "wrap",
               gap: 16,
-              width: "100%"
+              width: "100%",
             }}
           >
             <InfoCard
@@ -214,7 +203,7 @@ export const MainPage = () => {
               lineHeight: "22px",
               marginTop: 16,
               marginBottom: 32,
-              width: "60%"
+              width: "85%"
             }}
           >
             These projects provide practical examples of some of my work along with interactive demonstrations that demonstrate the skill, brief explanations, and links to source material. 
@@ -225,7 +214,8 @@ export const MainPage = () => {
               display: "flex",
               flexWrap: "wrap",
               gap: 16,
-              width: "100%"
+              width: "100%",
+              height: "100vh auto"
             }}
           >
             <InfoCard
@@ -262,7 +252,7 @@ export const MainPage = () => {
               display: "flex",
               flexWrap: "wrap",
               gap: 16,
-              width: "100%"
+              width: "100%",
             }}
           >
             <WorkInfoCard

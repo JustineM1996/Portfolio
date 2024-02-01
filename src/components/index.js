@@ -1,3 +1,5 @@
+import { Footer } from './footer';
+
 import { 
     InfoCard,
     WorkInfoCard 
@@ -15,5 +17,6 @@ export {
     Find,
     InfoCard,
     WorkInfoCard,
+    Footer, 
 };
 
