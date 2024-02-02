@@ -5,64 +5,64 @@ import {
 
 import React from "react"
 
-export const InfoCard = ({ title, href, image }) => {
+export const TechnologyInfoCard = ({ title, href, image }) => {
 
-  const { useToken } = theme
-  const { token } = useToken()
+    const { useToken } = theme
+    const { token } = useToken()
 
-  return (
+    return (
 
-    <div
-        style={{
-            backgroundColor: token.colorBgContainer,
-            boxShadow: token.boxShadow,
-            borderRadius: "5px",
-            color: token.colorTextSecondary,
-            lineHeight: "22px",
-            padding: "16px 19px",
-            minWidth: "220px",
-            flex: 1
-        }}
-    >
-    
         <div
             style={{
-                display: "flex",
-                gap: "8px",
-                alignItems: "center",
-                marginTop: 10
+                backgroundColor: token.colorBgContainer,
+                boxShadow: token.boxShadow,
+                borderRadius: "5px",
+                color: token.colorTextSecondary,
+                lineHeight: "22px",
+                padding: "16px 19px",
+                minWidth: "220px",
+                flex: 1
             }}
         >
-
+        
             <div
                 style={{
-                    width: 80,
-                    height: 80,
-                    lineHeight: "22px",
-                    backgroundSize: "100%",
-                    padding: "8px 16px 16px 12px",
+                    display: "flex",
+                    gap: "8px",
+                    alignItems: "center",
+                    marginTop: 10
                 }}
             >
-                <Image src={image}/>
-            </div>
 
-            <div
-                style={{
-                    fontSize: "18px",
-                    color: token.colorText,
-                    paddingBottom: 8
-                }}
-            >
-                <a href={href} target="_blank" rel="noreferrer" style={{color: token.colorText,}} >
-                    {title}
-                </a>
+                <div
+                    style={{
+                        width: 80,
+                        height: 80,
+                        lineHeight: "22px",
+                        backgroundSize: "100%",
+                        padding: "8px 16px 16px 12px",
+                    }}
+                >
+                    <Image src={image}/>
+                </div>
+
+                <div
+                    style={{
+                        fontSize: "18px",
+                        color: token.colorText,
+                        paddingBottom: 8
+                    }}
+                >
+                    <a href={href} target="_blank" rel="noreferrer" style={{color: token.colorText,}} >
+                        {title}
+                    </a>
+                </div>
+
             </div>
 
         </div>
 
-    </div>
-
-  )
+    )
 
 }
 
@@ -72,6 +72,7 @@ export const ProjectsInfoCard = ({ title, href, image, image2, desc }) => {
     const { token } = useToken()
   
     return (
+
         <div
             style={{
                 backgroundColor: token.colorBgContainer,
@@ -146,17 +147,18 @@ export const ProjectsInfoCard = ({ title, href, image, image2, desc }) => {
             </div>
             
         </div>
+
     )
 
 }
   
-
 export const WorkInfoCard = ({ title, date, href, image }) => {
 
     const { useToken } = theme
     const { token } = useToken()
   
     return (
+
         <div
             style={{
                 backgroundColor: token.colorBgContainer,
@@ -220,7 +222,69 @@ export const WorkInfoCard = ({ title, date, href, image }) => {
             </div>
 
         </div>
+
     )
 
 }
-  
+
+
+export const FooterInfoCard = ({ title, href, image }) => {
+
+    const { useToken } = theme
+    const { token } = useToken()
+
+    return (
+
+        <div
+            style={{
+                backgroundColor: false,
+                boxShadow: token.boxShadow,
+                borderRadius: "5px",
+                color: token.colorTextSecondary,
+                minWidth: "330px",
+                flex: 1,
+            }}
+        >
+        
+            <div
+                style={{
+                    display: "flex",
+                    gap: "8px",
+                    alignItems: "center",
+                    marginTop: 10
+                }}
+            >
+
+                <div
+                    style={{
+                        width: 60,
+                        height: 60,
+                        lineHeight: "22px",
+                        backgroundSize: "100%",
+                        padding: "8px 16px 16px 12px",
+                        marginTop: 10
+                    }}
+                >
+                    <Image src={image}/>
+                </div>
+
+                <div
+                    style={{
+                        fontSize: "18px",
+                        color: token.colorText,
+                        paddingBottom: 8,
+                        marginTop: 10
+                    }}
+                >
+                    <a href={href} target="_blank" rel="noreferrer" style={{color: token.colorText,}} >
+                        {title}
+                    </a>
+                </div>
+                
+            </div>
+
+        </div>
+
+    )
+
+}

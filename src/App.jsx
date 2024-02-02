@@ -7,13 +7,6 @@ import {
 } from './configs';
 
 import {
-  Facebook,
-  Github,
-  Find,
-  Footer, 
-} from './components';
-
-import {
   MainPage
 } from './pages/Main.jsx'
 
@@ -48,36 +41,12 @@ function App() {
         header: {
           colorBgMenuItemSelected: "gray"
         }
-      }}
-      actionsRender={props => {
-        if (props.isMobile) return [
-          <Find key="me"/>,
-          <Facebook key="facebook"/>,
-          <Github key="github"/>,
-        ]
-        if (typeof window === "undefined") return [
-          <Find key="me"/>,
-          <Facebook key="facebook"/>,
-          <Github key="github"/>,
-        ]
-        return [
-          <Find key="me"/>,
-          <Facebook key="facebook"/>,
-          <Github key="github"/>,
-          ]
-      }}      
-      footerRender={() => {
-        return (
-        <Footer />
-        )
-      }}
+      }}    
       {...defaultSettings}
     >
-      
       <PageContainer title={false}>
         <MainPage/>
       </PageContainer>
-      
     </ProLayout>
   )
 }

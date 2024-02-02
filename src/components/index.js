@@ -1,24 +1,14 @@
-import { Footer } from './footer';
-
 import { 
-    InfoCard,
+    TechnologyInfoCard,
+    ProjectsInfoCard,
     WorkInfoCard,
-    ProjectsInfoCard
+    FooterInfoCard
 } from './infocard';
 
-import {
-    Facebook,
-    Github,
-    Find,
-} from './rightcontent';
-
 export {
-    Facebook,
-    Github,
-    Find,
-    InfoCard,
-    WorkInfoCard,
+    TechnologyInfoCard,
     ProjectsInfoCard,
-    Footer, 
+    WorkInfoCard,
+    FooterInfoCard,
 };
 

@@ -10,9 +10,10 @@ import {
 } from "antd"
 
 import {
-  InfoCard,
+  TechnologyInfoCard,
   WorkInfoCard,
   ProjectsInfoCard,
+  FooterInfoCard
 } from "../components"
 
 import ctaimage from '../assets/background/cta-image.webp'
@@ -37,6 +38,12 @@ import soon from '../assets/project-icon/soon.png'
 import gpnextsolutioninc from '../assets/company-icon/gp-next-solution-inc.png'
 import lloydlaboratoriesinc from '../assets/company-icon/lloyd-laboratoties-inc.jpeg'
 
+import email from '../assets/social-icon/email.png'
+import facebook from '../assets/social-icon/facebook.png'
+import github from '../assets/social-icon/github.png'
+import indeed from '../assets/social-icon/indeed.png'
+import logo from '../assets/social-icon/logo.png'
+
 export const MainPage = () => {
 
   const { token } = theme.useToken();
@@ -47,7 +54,6 @@ export const MainPage = () => {
     minHeight: "80vh",
   };
   
-
   return (
     <>
       {/* M A I N . */}
@@ -69,24 +75,13 @@ export const MainPage = () => {
           >
             <div
               style={{
-                fontSize: "50px",
-                fontWeight: "bold",
-                color: token.colorTextHeading,
-                display: "flex",
-                marginBottom: -15,
-              }}
-            >
-              HI, I'M
-            </div>
-            <div
-              style={{
                 fontSize: "60px",
                 fontWeight: "bold",
                 color: token.colorTextHeading,
                 display: "flex",
               }}
             >
-              JUSTINE M.
+              HI, I'M JUSTINE M.
             </div>
             <div
               style={{
@@ -133,13 +128,14 @@ export const MainPage = () => {
             fontSize: "16px",
             color: token.colorTextSecondary,
             lineHeight: "22px",
-            width: "83%",
-            marginBottom: 50,
+            width: "75%",
           }}
         >
-          I'm Justine M. Hilario 27 years old from City of Malolos, Bulacan.
-          My recent job is Software Engineer for almost 2 years.
-          As of now I am still willing to learn to widen my knowledge and skills when it comes to programming.
+          I'm Justine M. Hilario, a 27 yr old resident of Bulacan City of Malolos.
+          I have a bachelor degree in information system, and I have worked as a software engineer for almost 2 years.
+          <p>
+          I'm still willing to learn new things right now in order to expand my programming knowledge and abilities.
+          </p>
         </p>
         <div
           style={{
@@ -149,15 +145,15 @@ export const MainPage = () => {
             width: "100%",
           }}
         >
-          <InfoCard
+          <TechnologyInfoCard
             image={website}
             title="Website Development"
           />
-          <InfoCard
+          <TechnologyInfoCard
             image={software}
             title="Software Development"
           />
-          <InfoCard
+          <TechnologyInfoCard
             image={thirdparty}
             title="Third-Party Integration"
           />
@@ -200,42 +196,42 @@ export const MainPage = () => {
               gap: 16,
             }}
           >
-            <InfoCard
+            <TechnologyInfoCard
               image={html5}
               title="HTML"
               href="https://www.w3schools.com/html/"
             />
-            <InfoCard
+            <TechnologyInfoCard
               image={css}
               title="CSS"
               href="https://www.w3schools.com/css/"
             />
-            <InfoCard
+            <TechnologyInfoCard
               image={mysql}
               title="MySql"
               href="https://www.w3schools.com/mysql/"
             />
-            <InfoCard
+            <TechnologyInfoCard
               image={reactjs}
               title="ReactJs"
               href="https://react.dev/"
             />
-            <InfoCard
+            <TechnologyInfoCard
               image={nodejs}
               title="Node.js"
               href="https://nodejs.org/en"
             />
-            <InfoCard
+            <TechnologyInfoCard
               image={js}
               title="JavaScript"
               href="https://www.javascript.com/"
             />
-            <InfoCard
+            <TechnologyInfoCard
               image={antdesign}
               title="Ant Design"
               href="https://www.javascript.com/"
             />
-            <InfoCard
+            <TechnologyInfoCard
               image={git}
               title="Git"
               href="https://www.javascript.com/"
@@ -330,6 +326,60 @@ export const MainPage = () => {
               href="https://lloydlab.com/"
             />
           </div>
+        </Flex>
+      </ProCard>
+
+      {/* T E C H N O L O G I E S . */} 
+      <ProCard
+        style={{
+          height: "30%",
+          background: "transparent"
+        }}
+      >
+        <Flex wrap="wrap" gap="small">
+          <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
+          <div
+            style={{
+              fontSize: "30px",
+              fontWeight: "bold",
+              color: token.colorTextHeading,
+              marginBottom: 50,
+              display: "flex",
+            }}
+          >
+            FIND ME ON !
+          </div>
+            <div
+              style={{
+                gap: 16,
+              }}
+            >
+              <FooterInfoCard
+                image={logo}
+                title="JustHIL1996"
+              />
+              <FooterInfoCard
+                image={email}
+                title="JustineMHilario@gmail.com"
+                href="https://mail.google.com/mail/u/0/#inbox"
+              />
+              <FooterInfoCard
+                image={facebook}
+                title="Facebook"
+                href="https://www.facebook.com/justine1996"
+              />
+              <FooterInfoCard
+                image={github}
+                title="GitHub"
+                href="https://github.com/JustineM1996"
+              />
+              <FooterInfoCard
+                image={indeed}
+                title="Indeed"
+                href="https://www.w3schools.com/css/"
+              />
+            </div>
+          </Flex>
         </Flex>
       </ProCard>
     </>
