@@ -1,10 +1,27 @@
 {
   "files": {
-    "main.js": "/Justine-Portfolio/static/js/main.cdd1cbeb.js",
-    "index.html": "/Justine-Portfolio/index.html",
-    "main.cdd1cbeb.js.map": "/Justine-Portfolio/static/js/main.cdd1cbeb.js.map"
+    "main.js": "/static/js/main.add19f80.js",
+    "static/media/soon.png": "/static/media/soon.2dfc92d41b92cf78e0d7.png",
+    "static/media/cta-image.webp": "/static/media/cta-image.3f998ea9ae00212d4a00.webp",
+    "static/media/peso.png": "/static/media/peso.8698bb9a408c9a1e750a.png",
+    "static/media/peso-page.png": "/static/media/peso-page.cf7023bc1d61bb158a5c.png",
+    "static/media/ant-design.png": "/static/media/ant-design.50dc81550ee20017d2c7.png",
+    "static/media/html5.png": "/static/media/html5.1d7b133e22ffe4829da6.png",
+    "static/media/background-1.png": "/static/media/background-1.bc0ef77f69e60af6ab92.png",
+    "static/media/node-js.png": "/static/media/node-js.bc50142dcaff3c8a3b6b.png",
+    "static/media/css.png": "/static/media/css.9407ad358cdb22b8b1f0.png",
+    "static/media/mysql.png": "/static/media/mysql.7d8d571e5629923eaf74.png",
+    "static/media/git.png": "/static/media/git.fd1a85d6be07fd88fb05.png",
+    "static/media/gp-next-solution-inc.png": "/static/media/gp-next-solution-inc.28eae51f00b124ce5ac4.png",
+    "static/media/website-development.png": "/static/media/website-development.5325b10c8508487a9af4.png",
+    "static/media/software-development-.png": "/static/media/software-development-.af885b99e3f19586bd3a.png",
+    "static/media/thrid-party.png": "/static/media/thrid-party.f80993e0664a5c42664d.png",
+    "static/media/js.png": "/static/media/js.266bd9fb2663dcc057b4.png",
+    "static/media/lloyd-laboratoties-inc.jpeg": "/static/media/lloyd-laboratoties-inc.c5be8d978ea56de26298.jpeg",
+    "index.html": "/index.html",
+    "main.add19f80.js.map": "/static/js/main.add19f80.js.map"
   },
   "entrypoints": [
-    "static/js/main.cdd1cbeb.js"
+    "static/js/main.add19f80.js"
   ]
 }
