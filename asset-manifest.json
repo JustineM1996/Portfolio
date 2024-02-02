@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.add19f80.js",
+    "main.js": "/static/js/main.72c96bcc.js",
     "static/media/soon.png": "/static/media/soon.2dfc92d41b92cf78e0d7.png",
     "static/media/cta-image.webp": "/static/media/cta-image.3f998ea9ae00212d4a00.webp",
     "static/media/peso.png": "/static/media/peso.8698bb9a408c9a1e750a.png",
@@ -14,14 +14,17 @@
     "static/media/git.png": "/static/media/git.fd1a85d6be07fd88fb05.png",
     "static/media/gp-next-solution-inc.png": "/static/media/gp-next-solution-inc.28eae51f00b124ce5ac4.png",
     "static/media/website-development.png": "/static/media/website-development.5325b10c8508487a9af4.png",
+    "static/media/facebook.png": "/static/media/facebook.49e67d43221b6bb1aa86.png",
     "static/media/software-development-.png": "/static/media/software-development-.af885b99e3f19586bd3a.png",
+    "static/media/github.png": "/static/media/github.8d5c5208ba4e6278a5f8.png",
     "static/media/thrid-party.png": "/static/media/thrid-party.f80993e0664a5c42664d.png",
+    "static/media/email.png": "/static/media/email.a2f2146f929409405da0.png",
     "static/media/js.png": "/static/media/js.266bd9fb2663dcc057b4.png",
     "static/media/lloyd-laboratoties-inc.jpeg": "/static/media/lloyd-laboratoties-inc.c5be8d978ea56de26298.jpeg",
     "index.html": "/index.html",
-    "main.add19f80.js.map": "/static/js/main.add19f80.js.map"
+    "main.72c96bcc.js.map": "/static/js/main.72c96bcc.js.map"
   },
   "entrypoints": [
-    "static/js/main.add19f80.js"
+    "static/js/main.72c96bcc.js"
   ]
 }
