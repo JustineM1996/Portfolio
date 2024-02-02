@@ -1,6 +1,8 @@
-import React from "react"
+import React from 'react';
 
-import { PageContainer } from "@ant-design/pro-components"
+import {
+  ProCard,
+} from '@ant-design/pro-components';
 
 import {
   theme,
@@ -13,27 +15,56 @@ import {
   ProjectsInfoCard,
 } from "../components"
 
+import ctaimage from '../assets/background/cta-image.webp'
+
+import website from '../assets/just-icon/website-development.png'
+import software from '../assets/just-icon/software-development-.png'
+import thirdparty from '../assets/just-icon/thrid-party.png'
+
+import html5 from '../assets/dev-icon/html5.png'
+import css from '../assets/dev-icon/css.png'
+import mysql from '../assets/dev-icon/mysql.png'
+import reactjs from '../assets/dev-icon/react-js.png'
+
+import nodejs from '../assets/dev-icon/node-js.png'
+import js from '../assets/dev-icon/js.png'
+import antdesign from '../assets/dev-icon/ant-design.png'
+import git from '../assets/dev-icon/git.png'
+
+import peso from '../assets/project-icon/peso.png'
+import pesopage from '../assets/project-icon/peso-page.png'
+import soon from '../assets/project-icon/soon.png'
+import gpnextsolutioninc from '../assets/company-icon/gp-next-solution-inc.png'
+import lloydlaboratoriesinc from '../assets/company-icon/lloyd-laboratoties-inc.jpeg'
+
 export const MainPage = () => {
 
   const { token } = theme.useToken();
 
   const boxStyle = {
-    width: "100%",
-    height: "auto"
+    width: '100%',
+    height: 'auto',
+    minHeight: "80vh",
   };
+  
 
   return (
     <>
-      <PageContainer title={false}>
       {/* M A I N . */}
-        <Flex  justify={"center"} align={"flex-start"} vertical style={{height: "100vh"}}>
+      <ProCard
+        style={{
+          marginBottom: 50,
+          background: "transparent"
+        }}
+      >
+        <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
           <div
             style={{
               width: "100%",
               backgroundPosition: "100% -30%",
               backgroundRepeat: "no-repeat",
               backgroundSize: "274px auto",
-              backgroundImage:"url('././background/cta-image.webp')",
+              backgroundImage:'url' + ctaimage,
             }}
           >
             <div
@@ -42,6 +73,7 @@ export const MainPage = () => {
                 fontWeight: "bold",
                 color: token.colorTextHeading,
                 display: "flex",
+                marginBottom: -15,
               }}
             >
               HI, I'M
@@ -50,7 +82,6 @@ export const MainPage = () => {
               style={{
                 fontSize: "60px",
                 fontWeight: "bold",
-                marginBottom: -15,
                 color: token.colorTextHeading,
                 display: "flex",
               }}
@@ -68,70 +99,79 @@ export const MainPage = () => {
             </div>
           </div>
         </Flex>
-      </PageContainer>
+      </ProCard>
 
-      <PageContainer title={false}>
       {/* O V E R V I E W . */}
-        <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical >
-          <div
-            style={{
-              fontSize: "20px",
-              color: token.colorTextHeading,
-              display: "flex",
-            }}
-          >
-            INTRODUCTION
-          </div>
-          <div
-            style={{
-              fontSize: "40px",
-              fontWeight: "bold",
-              color: token.colorTextHeading,
-              display: "flex",
-            }}
-          >
-            O V E R V I E W .
-          </div>
-          <p
-            style={{
-              fontSize: "16px",
-              color: token.colorTextSecondary,
-              lineHeight: "22px",
-              width: "85%",
-              marginBottom: 50,
-            }}
-          >
-            I'm Justine M. Hilario 27 years old from City of Malolos, Bulacan.
-            My recent job is Jr. Software Engineer and Jr. Prorammer for almost 2 years.
-            <dr/>
-             As of now I am still willing to learn to widen my knowledge and skills when it comes to programming.
-          </p>
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: 16,
-              width: "100%",
-            }}
-          >
-            <InfoCard
-              image="./dev-icon/react-js.png"
-              title="Frontend Developer"
-              desc="Web developers that specialise in front-end development use computer programming languages such as JavaScript, HTML, and CSS to create websites."
-              href="https://www.coursera.org/articles/front-end-developer"
-            />
-            <InfoCard
-              image="./dev-icon/node-js.png"
-              title="Backend Developer"
-              desc="A back-end developer is a kind of programmer who develops a website, software, or information system's logical backend and basic computational logic."
-              href="https://www.coursera.org/articles/back-end-developer"
-            />
-          </div>
+      <ProCard
+        style={{
+          marginBottom: 50,
+          background: "transparent"
+        }}
+      >
+        <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
+        <div
+          style={{
+            fontSize: "20px",
+            color: token.colorTextHeading,
+            display: "flex",
+          }}
+        >
+          INTRODUCTION
+        </div>
+        <div
+          style={{
+            fontSize: "30px",
+            fontWeight: "bold",
+            color: token.colorTextHeading,
+            display: "flex",
+          }}
+        >
+          O V E R V I E W .
+        </div>
+        <p
+          style={{
+            fontSize: "16px",
+            color: token.colorTextSecondary,
+            lineHeight: "22px",
+            width: "83%",
+            marginBottom: 50,
+          }}
+        >
+          I'm Justine M. Hilario 27 years old from City of Malolos, Bulacan.
+          My recent job is Software Engineer for almost 2 years.
+          As of now I am still willing to learn to widen my knowledge and skills when it comes to programming.
+        </p>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 16,
+            width: "100%",
+          }}
+        >
+          <InfoCard
+            image={website}
+            title="Website Development"
+          />
+          <InfoCard
+            image={software}
+            title="Software Development"
+          />
+          <InfoCard
+            image={thirdparty}
+            title="Third-Party Integration"
+          />
+        </div>
         </Flex>
-      </PageContainer>
+      </ProCard>
 
-      <PageContainer title={false}>
-      {/* T E C H N O L O G I E S . */}
+      {/* T E C H N O L O G I E S . */} 
+      <ProCard
+        style={{
+          marginBottom: 50,
+          background: "transparent"
+        }}
+      >
         <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
           <div
             style={{
@@ -144,7 +184,7 @@ export const MainPage = () => {
           </div>
           <div
             style={{
-              fontSize: "40px",
+              fontSize: "30px",
               fontWeight: "bold",
               color: token.colorTextHeading,
               marginBottom: 50,
@@ -158,59 +198,71 @@ export const MainPage = () => {
               display: "flex",
               flexWrap: "wrap",
               gap: 16,
-              width: "100%",
             }}
           >
             <InfoCard
-              image="./dev-icon/react-js.png"
+              image={html5}
+              title="HTML"
+              href="https://www.w3schools.com/html/"
+            />
+            <InfoCard
+              image={css}
+              title="CSS"
+              href="https://www.w3schools.com/css/"
+            />
+            <InfoCard
+              image={mysql}
+              title="MySql"
+              href="https://www.w3schools.com/mysql/"
+            />
+            <InfoCard
+              image={reactjs}
               title="ReactJs"
               href="https://react.dev/"
             />
             <InfoCard
-              image="./dev-icon/node-js.png"
+              image={nodejs}
               title="Node.js"
               href="https://nodejs.org/en"
             />
             <InfoCard
-              image="./dev-icon/ts.png"
-              title="TypeScript"
-              href="https://www.typescriptlang.org/"
+              image={js}
+              title="JavaScript"
+              href="https://www.javascript.com/"
             />
             <InfoCard
-              image="./dev-icon/js.png"
-              title="JavaScript"
+              image={antdesign}
+              title="Ant Design"
+              href="https://www.javascript.com/"
+            />
+            <InfoCard
+              image={git}
+              title="Git"
               href="https://www.javascript.com/"
             />
           </div>
         </Flex>
-      </PageContainer>
+      </ProCard>
 
-      <PageContainer title={false}>
       {/* P R O J E C T S . */}
+      <ProCard
+        style={{
+          marginBottom: 50,
+          background: "transparent"
+        }}
+      >
         <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
           <div
             style={{
-              fontSize: "40px",
+              fontSize: "30px",
               fontWeight: "bold",
               color: token.colorTextHeading,
               display: "flex",
+              marginBottom: 50,
             }}
           >
             P R O J E C T S .
           </div>
-          <p
-            style={{
-              fontSize: "16px",
-              color: token.colorTextSecondary,
-              lineHeight: "22px",
-              marginTop: 16,
-              marginBottom: 50,
-              width: "85%"
-            }}
-          >
-            These projects provide practical examples of some of my work along with interactive demonstrations that demonstrate the skill, brief explanations, and links to source material. 
-            They show that I can handle challenging issues, adapt to new technologies, and lead projects successfully.
-          </p>
           <div
             style={{
               display: "flex",
@@ -221,14 +273,14 @@ export const MainPage = () => {
             }}
           >
             <ProjectsInfoCard
-              image="./project-icon/peso.png"
-              image2="./project-icon/peso-page.png"
+              image={peso}
+              image2={pesopage}
               title="P E S O"
               desc="It is an online employment platform that lists employers, openings, and announcements."
               href=""
             />
             <ProjectsInfoCard
-              image="./project-icon/soon.png"
+              image={soon}
               image2=""
               title="Coming soon"
               desc=""
@@ -236,14 +288,19 @@ export const MainPage = () => {
             />
           </div>
         </Flex>
-      </PageContainer>
+      </ProCard>
 
-      <PageContainer title={false}>
       {/* W O R K E X P E R I E N C E . */}
+      <ProCard
+        style={{
+          marginBottom: 50,
+          background: "transparent"
+        }}
+      >
         <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
           <div
             style={{
-              fontSize: "40px",
+              fontSize: "30px",
               fontWeight: "bold",
               color: token.colorTextHeading,
               marginBottom: 50,
@@ -261,21 +318,20 @@ export const MainPage = () => {
             }}
           >
             <WorkInfoCard
-              image="./company-icon/gp-next-solution-inc.png"
+              image={gpnextsolutioninc}
               title="Software Engineer"
               date="Nov 2021 - Jan 2023"
               href="https://web.facebook.com/gpnext2020/?_rdc=1&_rdr"
             />
             <WorkInfoCard
-              image="./company-icon/lloyd-laboratoties-inc.jpeg"
+              image={lloydlaboratoriesinc}
               title="Junior Programmer"
               date="June 2023 - Dec 2023"
               href="https://lloydlab.com/"
             />
           </div>
         </Flex>
-      </PageContainer>
-
+      </ProCard>
     </>
   )
 }

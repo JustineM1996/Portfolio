@@ -1,23 +1,22 @@
 import {
-    Card,
     Image,
-    theme 
+    theme
 } from "antd"
 
 import React from "react"
 
-export const InfoCard = ({ title, href, desc, image }) => {
+export const InfoCard = ({ title, href, image }) => {
 
   const { useToken } = theme
   const { token } = useToken()
 
   return (
+
     <div
         style={{
             backgroundColor: token.colorBgContainer,
             boxShadow: token.boxShadow,
-            borderRadius: "8px",
-            fontSize: "14px",
+            borderRadius: "5px",
             color: token.colorTextSecondary,
             lineHeight: "22px",
             padding: "16px 19px",
@@ -25,33 +24,31 @@ export const InfoCard = ({ title, href, desc, image }) => {
             flex: 1
         }}
     >
-
+    
         <div
             style={{
                 display: "flex",
-                gap: "4px",
-                alignItems: "center"
+                gap: "8px",
+                alignItems: "center",
+                marginTop: 10
             }}
         >
 
             <div
                 style={{
-                    width: 60,
-                    height: 60,
+                    width: 80,
+                    height: 80,
                     lineHeight: "22px",
                     backgroundSize: "100%",
-                    textAlign: "center",
                     padding: "8px 16px 16px 12px",
-                    color: "#FFF",
-                    fontWeight: "bold"
                 }}
             >
-                <Image src={image} style={{borderRadius: 2,}}/>
+                <Image src={image}/>
             </div>
 
             <div
                 style={{
-                    fontSize: "20px",
+                    fontSize: "18px",
                     color: token.colorText,
                     paddingBottom: 8
                 }}
@@ -63,27 +60,13 @@ export const InfoCard = ({ title, href, desc, image }) => {
 
         </div>
 
-        <div
-            style={{
-                display: "flex",
-                alignItems: "center",
-                fontSize: "14px",
-                color: token.colorTextSecondary,
-                textAlign: "justify",
-                lineHeight: "22px",
-                marginBottom: 8,
-            }}
-        >
-            {desc}
-        </div>
-
     </div>
 
   )
 
 }
 
-export const ProjectsInfoCard = ({ title, date, href, image, image2, desc }) => {
+export const ProjectsInfoCard = ({ title, href, image, image2, desc }) => {
 
     const { useToken } = theme
     const { token } = useToken()
@@ -94,7 +77,6 @@ export const ProjectsInfoCard = ({ title, date, href, image, image2, desc }) => 
                 backgroundColor: token.colorBgContainer,
                 boxShadow: token.boxShadow,
                 borderRadius: "8px",
-                fontSize: "14px",
                 color: token.colorTextSecondary,
                 lineHeight: "22px",
                 padding: "16px 19px",
@@ -106,7 +88,7 @@ export const ProjectsInfoCard = ({ title, date, href, image, image2, desc }) => 
             <div
                 style={{
                     display: "flex",
-                    gap: "4px",
+                    gap: "8px",
                     alignItems: "center",
                 }}
             >
@@ -125,7 +107,7 @@ export const ProjectsInfoCard = ({ title, date, href, image, image2, desc }) => 
     
                 <div
                     style={{
-                        fontSize: "20px",
+                        fontSize: "18px",
                         color: token.colorText,
                         paddingBottom: 8,
                         marginTop: 10
@@ -134,19 +116,6 @@ export const ProjectsInfoCard = ({ title, date, href, image, image2, desc }) => 
                     <a href={href} target="_blank" rel="noreferrer" style={{color: token.colorText,}} >
                         {title}
                     </a>
-
-                    <div
-                        style={{
-                            fontSize: "14px",
-                            color: token.colorTextSecondary,
-                            textAlign: "justify",
-                            lineHeight: "28px",
-                            marginBottom: 8
-                        }}
-                    >
-                        {date}
-                    </div>
-
                 </div>
 
             </div>
@@ -182,7 +151,7 @@ export const ProjectsInfoCard = ({ title, date, href, image, image2, desc }) => 
 }
   
 
-export const WorkInfoCard = ({ title, date, href, image, desc }) => {
+export const WorkInfoCard = ({ title, date, href, image }) => {
 
     const { useToken } = theme
     const { token } = useToken()
@@ -193,7 +162,6 @@ export const WorkInfoCard = ({ title, date, href, image, desc }) => {
                 backgroundColor: token.colorBgContainer,
                 boxShadow: token.boxShadow,
                 borderRadius: "8px",
-                fontSize: "14px",
                 color: token.colorTextSecondary,
                 lineHeight: "22px",
                 padding: "16px 19px",
@@ -207,6 +175,7 @@ export const WorkInfoCard = ({ title, date, href, image, desc }) => {
                     display: "flex",
                     gap: "4px",
                     alignItems: "center",
+                    marginTop: 10
                 }}
             >
   
@@ -250,20 +219,6 @@ export const WorkInfoCard = ({ title, date, href, image, desc }) => {
 
             </div>
 
-            <div
-                style={{
-                    display: "flex",
-                    alignItems: "center",
-                    fontSize: "14px",
-                    color: token.colorTextSecondary,
-                    textAlign: "justify",
-                    lineHeight: "22px",
-                    marginBottom: 8,
-                }}
-            >
-                {desc}
-            </div>
-            
         </div>
     )
 
