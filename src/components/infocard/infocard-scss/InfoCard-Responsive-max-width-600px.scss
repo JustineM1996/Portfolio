@@ -3,7 +3,7 @@
 
   .infocard-technology-page {
     border-radius: 5px;
-    padding: 12px 12px;
+    padding: 9px 9px;
     min-width: 25% auto;
 
     .group-technology-page {
@@ -110,7 +110,7 @@
 
   .infocard-footer-page {
     border-radius: 5px;
-    min-width: 25% auto;
+    min-width: 220px;
 
     .group-footer-page {
       display: flex;
@@ -125,7 +125,7 @@
       }
 
       .footer-title {
-        font-size: 0px;
+        font-size: 10px;
       }
 
     }
@@ -133,5 +133,4 @@
   }
 
 }
-
 

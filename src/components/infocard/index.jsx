@@ -23,7 +23,7 @@ export const TechnologyInfoCard = ({ title, href, image }) => {
         <div style={style} className='infocard-technology-page'>
             <div className='group-technology-page'>
                 <div className='technology-image'>
-                    <Image src={image}/>
+                    <Image src={image} />
                 </div>
                 <div className='technology-title'>
                     {title}

@@ -50,7 +50,7 @@ export const MainPage = () => {
   const style = { color: token.colorTextHeading }
 
   return (
-    <div class='module-page'>
+    <div className='module-page'>
 
       {/* M A I N - P A G E . */}
       <ProCard className="main-page">
