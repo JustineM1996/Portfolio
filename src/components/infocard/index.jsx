@@ -30,17 +30,16 @@ export const TechnologyInfoCard = ({ title, href, image }) => {
                     display: "flex",
                     gap: "8px",
                     alignItems: "center",
-                    marginTop: 10
                 }}
             >
 
                 <div
                     style={{
-                        width: 80,
-                        height: 80,
+                        width: 70,
+                        height: 70,
                         lineHeight: "22px",
                         backgroundSize: "100%",
-                        padding: "8px 16px 16px 12px",
+                        padding: "14px 16px",
                     }}
                 >
                     <Image src={image}/>
@@ -50,7 +49,6 @@ export const TechnologyInfoCard = ({ title, href, image }) => {
                     style={{
                         fontSize: "18px",
                         color: token.colorText,
-                        paddingBottom: 8
                     }}
                 >
                     <a href={href} target="_blank" rel="noreferrer" style={{color: token.colorText,}} >
@@ -239,9 +237,9 @@ export const FooterInfoCard = ({ title, href, image }) => {
             style={{
                 backgroundColor: false,
                 boxShadow: token.boxShadow,
-                borderRadius: "5px",
+                borderRadius: "8px",
                 color: token.colorTextSecondary,
-                minWidth: "330px",
+                minWidth: "220px",
                 flex: 1,
             }}
         >

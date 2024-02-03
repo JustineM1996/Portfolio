@@ -1,8 +1,10 @@
-import React from 'react';
+import './main-scss/index.js'
+
+import React from 'react'
 
 import {
   ProCard,
-} from '@ant-design/pro-components';
+} from '@ant-design/pro-components'
 
 import {
   theme,
@@ -15,8 +17,6 @@ import {
   ProjectsInfoCard,
   FooterInfoCard
 } from "../components"
-
-import ctaimage from '../assets/background/cta-image.webp'
 
 import website from '../assets/just-icon/website-development.png'
 import software from '../assets/just-icon/software-development-.png'
@@ -46,156 +46,55 @@ import logo from '../assets/social-icon/logo.png'
 
 export const MainPage = () => {
 
-  const { token } = theme.useToken();
+  const { token } = theme.useToken()
+  const style = { color: token.colorTextHeading }
 
-  const boxStyle = {
-    width: '100%',
-    height: 'auto',
-    minHeight: "80vh",
-  };
-  
   return (
-    <>
-      {/* M A I N . */}
-      <ProCard
-        style={{
-          marginBottom: 50,
-          background: "transparent"
-        }}
-      >
-        <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
-          <div
-            style={{
-              width: "100%",
-              backgroundPosition: "100% -30%",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "274px auto",
-              backgroundImage:'url' + ctaimage,
-            }}
-          >
-            <div
-              style={{
-                fontSize: "60px",
-                fontWeight: "bold",
-                color: token.colorTextHeading,
-                display: "flex",
-              }}
-            >
-              HI, I'M JUSTINE M.
-            </div>
-            <div
-              style={{
-                fontSize: "20px",
-                width: "100%",
-                color: token.colorTextHeading,
-              }}
-            >
-              Software Engineer {"</>, <_"}
-            </div>
-          </div>
+    <div class='module-page'>
+
+      {/* M A I N - P A G E . */}
+      <ProCard className="main-page">
+        <Flex className='flex-main-page' justify='center' align='flex-start' vertical>
+          <div className='name' style={style}> HI, I'M JUSTINE M. </div>
+          <div className='position' style={style}> Software Engineer {'</>, <_'} </div>
         </Flex>
       </ProCard>
 
-      {/* O V E R V I E W . */}
-      <ProCard
-        style={{
-          marginBottom: 50,
-          background: "transparent"
-        }}
-      >
-        <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
-        <div
-          style={{
-            fontSize: "20px",
-            color: token.colorTextHeading,
-            display: "flex",
-          }}
-        >
-          INTRODUCTION
-        </div>
-        <div
-          style={{
-            fontSize: "30px",
-            fontWeight: "bold",
-            color: token.colorTextHeading,
-            display: "flex",
-          }}
-        >
-          O V E R V I E W .
-        </div>
-        <p
-          style={{
-            fontSize: "16px",
-            color: token.colorTextSecondary,
-            lineHeight: "22px",
-            width: "75%",
-          }}
-        >
-          I'm Justine M. Hilario, a 27 yr old resident of Bulacan City of Malolos.
-          I have a bachelor degree in information system, and I have worked as a software engineer for almost 2 years.
-          <p>
-          I'm still willing to learn new things right now in order to expand my programming knowledge and abilities.
+      {/* O V E R V I E W - P A G E . */}
+      <ProCard className="overview-page">
+        <Flex className='flex-overview-page' justify='center' align='flex-start' vertical>
+          <div className='introduction' style={style}> INTRODUCTION </div>
+          <div className='overview' style={style}> O V E R V I E W . </div>
+          <p className='overview-description'>
+            I'm Justine M. Hilario, a 27 yr old resident of Bulacan City of Malolos.
+            I have a bachelor degree in information system, and I have worked as a software engineer for almost 2 years.
+          </p> 
+          <p className='overview-description-1'>
+            I'm still willing to learn new things right now in order to expand my programming knowledge and abilities.
           </p>
-        </p>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: 16,
-            width: "100%",
-          }}
-        >
-          <TechnologyInfoCard
-            image={website}
-            title="Website Development"
-          />
-          <TechnologyInfoCard
-            image={software}
-            title="Software Development"
-          />
-          <TechnologyInfoCard
-            image={thirdparty}
-            title="Third-Party Integration"
-          />
-        </div>
+          <div className='overview-infocard'>
+            <TechnologyInfoCard
+              image={website}
+              title="Website Development"
+            />
+            <TechnologyInfoCard
+              image={software}
+              title="Software Development"
+            />
+            <TechnologyInfoCard
+              image={thirdparty}
+              title="Third-Party Integration"
+            />
+          </div>
         </Flex>
       </ProCard>
 
       {/* T E C H N O L O G I E S . */} 
-      <ProCard
-        style={{
-          marginBottom: 50,
-          background: "transparent"
-        }}
-      >
-        <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
-          <div
-            style={{
-              fontSize: "20px",
-              color: token.colorTextHeading,
-              display: "flex",
-            }}
-          >
-            MY SKILLS
-          </div>
-          <div
-            style={{
-              fontSize: "30px",
-              fontWeight: "bold",
-              color: token.colorTextHeading,
-              marginBottom: 50,
-              display: "flex",
-            }}
-          >
-            T E C H N O L O G I E S .
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: 16,
-            }}
-          >
+      <ProCard className="technology-page">
+        <Flex className='flex-technology-page' justify='center' align='flex-start' vertical>
+          <div className='my-skills' style={style}> MY SKILLS </div>
+          <div className='technology' style={style}> T E C H N O L O G I E S . </div>
+          <div className='technology-infocard'>
             <TechnologyInfoCard
               image={html5}
               title="HTML"
@@ -241,33 +140,10 @@ export const MainPage = () => {
       </ProCard>
 
       {/* P R O J E C T S . */}
-      <ProCard
-        style={{
-          marginBottom: 50,
-          background: "transparent"
-        }}
-      >
-        <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
-          <div
-            style={{
-              fontSize: "30px",
-              fontWeight: "bold",
-              color: token.colorTextHeading,
-              display: "flex",
-              marginBottom: 50,
-            }}
-          >
-            P R O J E C T S .
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: 16,
-              width: "100%",
-              height: "100vh auto"
-            }}
-          >
+      <ProCard className='project-page'>
+        <Flex className='flex-project-page' justify='center' align='flex-start' vertical>
+          <div className='project' style={style}> P R O J E C T S . </div>
+          <div className='project-infocard'>
             <ProjectsInfoCard
               image={peso}
               image2={pesopage}
@@ -287,32 +163,10 @@ export const MainPage = () => {
       </ProCard>
 
       {/* W O R K E X P E R I E N C E . */}
-      <ProCard
-        style={{
-          marginBottom: 50,
-          background: "transparent"
-        }}
-      >
-        <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
-          <div
-            style={{
-              fontSize: "30px",
-              fontWeight: "bold",
-              color: token.colorTextHeading,
-              marginBottom: 50,
-              display: "flex",
-            }}
-          >
-            W O R K - E X P E R I E N C E .
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: 16,
-              width: "100%",
-            }}
-          >
+      <ProCard className='work-experience-page'>
+        <Flex className='flex-work-experience-page' justify='center' align='flex-start' vertical>
+          <div className='work-experience' style={style}> W O R K - E X P E R I E N C E . </div>
+          <div className='work-experience-infocard'>
             <WorkInfoCard
               image={gpnextsolutioninc}
               title="Software Engineer"
@@ -329,59 +183,39 @@ export const MainPage = () => {
         </Flex>
       </ProCard>
 
-      {/* T E C H N O L O G I E S . */} 
-      <ProCard
-        style={{
-          height: "30%",
-          background: "transparent"
-        }}
-      >
-        <Flex wrap="wrap" gap="small">
-          <Flex style={boxStyle} justify={"center"} align={"flex-start"} vertical>
-          <div
-            style={{
-              fontSize: "30px",
-              fontWeight: "bold",
-              color: token.colorTextHeading,
-              marginBottom: 50,
-              display: "flex",
-            }}
-          >
-            FIND ME ON !
+      {/* F O O T E R . */} 
+      <ProCard className='footer-page'>
+        <Flex className='flex-footer-page' justify='center' align='flex-start' vertical>
+          <div className='footer' style={style}> FIND ME ON ! </div>
+          <div className='footer-infocard'>
+            <FooterInfoCard
+              image={logo}
+              title="JustHIL1996"
+            />
+            <FooterInfoCard
+              image={email}
+              title="JustineMHilario @gmail.com"
+              href="https://mail.google.com/mail/u/0/#inbox"
+            />
+            <FooterInfoCard
+              image={facebook}
+              title="Facebook"
+              href="https://www.facebook.com/justine1996"
+            />
+            <FooterInfoCard
+              image={github}
+              title="GitHub"
+              href="https://github.com/JustineM1996"
+            />
+            <FooterInfoCard
+              image={indeed}
+              title="Indeed"
+              href="https://www.w3schools.com/css/"
+            />
           </div>
-            <div
-              style={{
-                gap: 16,
-              }}
-            >
-              <FooterInfoCard
-                image={logo}
-                title="JustHIL1996"
-              />
-              <FooterInfoCard
-                image={email}
-                title="JustineMHilario@gmail.com"
-                href="https://mail.google.com/mail/u/0/#inbox"
-              />
-              <FooterInfoCard
-                image={facebook}
-                title="Facebook"
-                href="https://www.facebook.com/justine1996"
-              />
-              <FooterInfoCard
-                image={github}
-                title="GitHub"
-                href="https://github.com/JustineM1996"
-              />
-              <FooterInfoCard
-                image={indeed}
-                title="Indeed"
-                href="https://www.w3schools.com/css/"
-              />
-            </div>
-          </Flex>
         </Flex>
       </ProCard>
-    </>
+
+    </div>
   )
 }
