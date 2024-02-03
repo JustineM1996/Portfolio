@@ -111,13 +111,13 @@ export const FooterInfoCard = ({ title, href, image }) => {
     return (
         <div style={style} className='infocard-footer-page'>
             <div className='group-footer-page'>
-                <div className='footer-image'>
-                    <Image src={image}/>
-                </div>
+                <a href={href} target="_blank" rel="noreferrer" style={{color: token.colorText,}} >
+                    <div className='footer-image'>
+                        <Image src={image} preview={false}/>
+                    </div>
+                </a>
                 <div className='footer-title'>
-                    <a href={href} target="_blank" rel="noreferrer" style={{color: token.colorText,}} >
-                        {title}
-                    </a>
+                    {title}
                 </div>
             </div>
         </div>
