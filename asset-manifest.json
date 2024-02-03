@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Justine-Portfolio/static/css/main.621ee4e3.css",
-    "main.js": "/Justine-Portfolio/static/js/main.67c78fbb.js",
+    "main.css": "/Justine-Portfolio/static/css/main.9b4971c8.css",
+    "main.js": "/Justine-Portfolio/static/js/main.b5889135.js",
     "static/media/soon.png": "/Justine-Portfolio/static/media/soon.2dfc92d41b92cf78e0d7.png",
     "static/media/peso.png": "/Justine-Portfolio/static/media/peso.8698bb9a408c9a1e750a.png",
     "static/media/peso-page.png": "/Justine-Portfolio/static/media/peso-page.cf7023bc1d61bb158a5c.png",
@@ -22,11 +22,11 @@
     "static/media/js.png": "/Justine-Portfolio/static/media/js.266bd9fb2663dcc057b4.png",
     "static/media/lloyd-laboratoties-inc.jpeg": "/Justine-Portfolio/static/media/lloyd-laboratoties-inc.c5be8d978ea56de26298.jpeg",
     "index.html": "/Justine-Portfolio/index.html",
-    "main.621ee4e3.css.map": "/Justine-Portfolio/static/css/main.621ee4e3.css.map",
-    "main.67c78fbb.js.map": "/Justine-Portfolio/static/js/main.67c78fbb.js.map"
+    "main.9b4971c8.css.map": "/Justine-Portfolio/static/css/main.9b4971c8.css.map",
+    "main.b5889135.js.map": "/Justine-Portfolio/static/js/main.b5889135.js.map"
   },
   "entrypoints": [
-    "static/css/main.621ee4e3.css",
-    "static/js/main.67c78fbb.js"
+    "static/css/main.9b4971c8.css",
+    "static/js/main.b5889135.js"
   ]
 }
