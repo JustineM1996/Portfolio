@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Justine-Portfolio/static/css/main.fd4bef4f.css",
-    "main.js": "/Justine-Portfolio/static/js/main.ccaec61a.js",
+    "main.js": "/Justine-Portfolio/static/js/main.ff703b48.js",
     "static/media/soon.png": "/Justine-Portfolio/static/media/soon.2dfc92d41b92cf78e0d7.png",
     "static/media/peso.png": "/Justine-Portfolio/static/media/peso.8698bb9a408c9a1e750a.png",
     "static/media/peso-page.png": "/Justine-Portfolio/static/media/peso-page.cf7023bc1d61bb158a5c.png",
@@ -23,10 +23,10 @@
     "static/media/lloyd-laboratoties-inc.jpeg": "/Justine-Portfolio/static/media/lloyd-laboratoties-inc.c5be8d978ea56de26298.jpeg",
     "index.html": "/Justine-Portfolio/index.html",
     "main.fd4bef4f.css.map": "/Justine-Portfolio/static/css/main.fd4bef4f.css.map",
-    "main.ccaec61a.js.map": "/Justine-Portfolio/static/js/main.ccaec61a.js.map"
+    "main.ff703b48.js.map": "/Justine-Portfolio/static/js/main.ff703b48.js.map"
   },
   "entrypoints": [
     "static/css/main.fd4bef4f.css",
-    "static/js/main.ccaec61a.js"
+    "static/js/main.ff703b48.js"
   ]
 }
