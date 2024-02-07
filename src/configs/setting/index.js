@@ -1,5 +1,5 @@
 export const defaultSettings = {
-  navTheme: "realDark",
+  navTheme: "light",
   colorPrimary: "#1890ff",
   layout: "top",
   contentWidth: "Fixed",

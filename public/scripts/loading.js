@@ -187,10 +187,10 @@
           </div>
         </div>
         <div class="loading-title">
-          Template
+          Justine M. Hilario
         </div>
         <div class="loading-sub-title">
-          Loading
+          Portfolio
         </div>
       </div>
     `;

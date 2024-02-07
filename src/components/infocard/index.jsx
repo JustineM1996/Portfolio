@@ -2,13 +2,13 @@ import './infocard-scss/index.js'
 
 import {
     Image,
-    theme
+    theme,
+    Tooltip
 } from "antd"
 
 import React from "react"
 
-
-export const TechnologyInfoCard = ({ title, href, image }) => {
+export const TechnologyInfoCard = ({ title, image, technology_title }) => {
 
     const { useToken } = theme
     const { token } = useToken()
@@ -23,11 +23,11 @@ export const TechnologyInfoCard = ({ title, href, image }) => {
         <div style={style} className='infocard-technology-page'>
             <div className='group-technology-page'>
                 <div className='technology-image'>
-                    <Image src={image} />
+                    <Image src={image} preview={false} style={{borderRadius: 2,}} />
                 </div>
-                <div className='technology-title'>
-                    {title}
-                </div>
+                    <div className='technology-title'>
+                        {title}
+                    </div>
             </div>
         </div>
     )
@@ -97,7 +97,7 @@ export const WorkInfoCard = ({ title, date, href, image }) => {
 }
 
 
-export const FooterInfoCard = ({ title, href, image }) => {
+export const FooterInfoCard = ({ title, href, image, title_1 }) => {
 
     const { useToken } = theme
     const { token } = useToken()
@@ -109,17 +109,19 @@ export const FooterInfoCard = ({ title, href, image }) => {
     }
 
     return (
-        <div style={style} className='infocard-footer-page'>
-            <div className='group-footer-page'>
-                <a href={href} target="_blank" rel="noreferrer" style={{color: token.colorText,}} >
-                    <div className='footer-image'>
-                        <Image src={image} preview={false}/>
+        <Tooltip className='tooltip-footer' placement="bottom" title={title}>
+            <a href={href} target="_blank" rel="noreferrer" style={{color: token.colorText,}} >
+                <div style={style} className='infocard-footer-page'>
+                    <div className='group-footer-page'>
+                        <div className='footer-image'>
+                            <Image src={image} preview={false}/>
+                        </div>
+                        <div className='footer-title'>
+                            {title}
+                        </div>
                     </div>
-                </a>
-                <div className='footer-title'>
-                    {title}
                 </div>
-            </div>
-        </div>
+            </a>
+        </Tooltip>
     )
 }

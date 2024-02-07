@@ -112,7 +112,7 @@ export const MainPage = () => {
             />
             <TechnologyInfoCard
               image={reactjs}
-              title="ReactJs"
+              title="React JS"
               href="https://react.dev/"
             />
             <TechnologyInfoCard
