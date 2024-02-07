@@ -16,6 +16,9 @@ import background1 from './assets/background/background-1.png'
 function App() {
   return (
     <ProLayout
+      stylish={false}
+      disableMobile={true}
+      collapsed={false}
       prefixCls="my-prefix"
       bgLayoutImgList={[
         {
@@ -39,7 +42,41 @@ function App() {
       ]}
       token={{
         header: {
-          colorBgMenuItemSelected: "gray"
+          colorBgHeader: 'hide',
+          colorBgScrollHeader: 'hide',
+          colorHeaderTitle: 'hide',
+          colorBgMenuItemHover: 'hide',
+          colorBgMenuElevated: 'hide',
+          colorBgMenuItemSelected: 'hide',
+          colorTextMenuSelected: 'hide',
+          colorTextMenuActive: 'hide',
+          colorTextMenu: 'hide',
+          colorTextMenuSecondary: 'hide',
+          colorBgRightActionsItemHover: 'hide',
+          colorTextRightActionsItem: 'hide',
+          heightLayoutHeader: 0,
+        },
+        sider: {
+          hide: true,
+          colorBgCollapsedButton: 'hide',
+          colorTextCollapsedButtonHover: 'hide',
+          colorTextCollapsedButton: 'hide',
+          colorMenuBackground: 'hide',
+          menuHeight: 'hide',
+          colorBgMenuItemCollapsedElevated: 'hide',
+          colorMenuItemDivider: 'hide',
+          colorBgMenuItemHover: 'hide',
+          colorBgMenuItemActive: 'hide',
+          colorBgMenuItemSelected: 'hide',
+          colorTextMenuSelected: 'hide',
+          colorTextMenuItemHover: 'hide',
+          colorTextMenuActive: 'hide',
+          colorTextMenu: 'hide',
+          colorTextMenuSecondary: 'hide',
+          paddingInlineLayoutMenu: 0,
+          paddingBlockLayoutMenu: 0,
+          colorTextMenuTitle: 'hide',
+          colorTextSubMenuSelected: 'hide',
         }
       }}    
       {...defaultSettings}

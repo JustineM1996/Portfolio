@@ -66,8 +66,8 @@ export const MainPage = () => {
           <div className='introduction' style={style}> INTRODUCTION </div>
           <div className='overview' style={style}> O V E R V I E W . </div>
           <p className='overview-description'>
-            I'm Justine M. Hilario, a 27 yr old resident of Bulacan City of Malolos.
-            I have a bachelor degree in information system, and I have worked as a software engineer for almost 2 years.
+            I'm Hilario Justine M., 27 years old and resident of City of Malolos, Bulacan.
+            I have a bachelor degree in information system and I have worked as a software engineer for almost 2 years.
           </p> 
           <p className='overview-description-1'>
             I'm still willing to learn new things right now in order to expand my programming knowledge and abilities.
@@ -194,7 +194,7 @@ export const MainPage = () => {
             />
             <FooterInfoCard
               image={email}
-              title="JustineMHilario @gmail.com"
+              title="JustineMHilario@gmail.com"
               href="https://mail.google.com/mail/u/0/#inbox"
             />
             <FooterInfoCard
