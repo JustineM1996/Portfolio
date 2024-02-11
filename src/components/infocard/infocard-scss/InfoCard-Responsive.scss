@@ -355,31 +355,35 @@
   
   }
 
-  .infocard-technology-page {
-    border-radius: 5px;
-    padding: 16px 19px;
-    min-width: 220px;
-    flex: 1px;
-    line-height: 22px;
+  .tooltip-technology {
 
-    .group-technology-page {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    .infocard-technology-page {
+      border-radius: 5px;
+      padding: 16px 19px;
+      min-width: 220px;
+      flex: 1px;
+      line-height: 22px;
 
-      .technology-image {
-        width: 70px;
-        height: 70px;
-        background-size: 100%;
-        padding: 15px 16px;
+      .group-technology-page {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .technology-image {
+          width: 70px;
+          height: 70px;
+          background-size: 100%;
+          padding: 15px 16px;
+        }
+
+        .technology-title {
+          font-size: 16px;
+        }
+
       }
-
-      .technology-title {
-        font-size: 16px;
-      }
-
+        
     }
-      
+    
   }
       
   .infocard-project-page {

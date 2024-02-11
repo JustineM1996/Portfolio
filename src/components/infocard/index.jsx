@@ -8,7 +8,7 @@ import {
 
 import React from "react"
 
-export const OverviewInfoCard = ({ title, image }) => {
+export const OverviewInfoCard = ({ title, sub_title, image }) => {
 
     const { useToken } = theme
     const { token } = useToken()
@@ -20,7 +20,7 @@ export const OverviewInfoCard = ({ title, image }) => {
     }
     
     return (
-        <Tooltip className='tooltip-overview' placement="bottom" title={title}>
+        <Tooltip className='tooltip-overview' placement="bottom" title={sub_title}>
             <div style={style} className='infocard-overview-page'>
                 <div className='group-overview-page'>
                     <div className='overview-image'>
@@ -35,7 +35,7 @@ export const OverviewInfoCard = ({ title, image }) => {
     )
 }
 
-export const TechnologyInfoCard = ({ title, image }) => {
+export const TechnologyInfoCard = ({ title, sub_title, image }) => {
 
     const { useToken } = theme
     const { token } = useToken()
@@ -47,20 +47,22 @@ export const TechnologyInfoCard = ({ title, image }) => {
     }
     
     return (
-        <div style={style} className='infocard-technology-page'>
-            <div className='group-technology-page'>
-                <div className='technology-image'>
-                    <Image src={image} style={{borderRadius: 2,}} />
-                </div>
-                <div className='technology-title'>
-                    {title}
+        <Tooltip className='tooltip-technology' placement="bottom" title={sub_title}>
+            <div style={style} className='infocard-technology-page'>
+                <div className='group-technology-page'>
+                    <div className='technology-image'>
+                        <Image src={image} style={{borderRadius: 2,}} />
+                    </div>
+                    <div className='technology-title'>
+                        {title}
+                    </div>
                 </div>
             </div>
-        </div>
+        </Tooltip>
     )
 }
 
-export const ProjectsInfoCard = ({ title, href, image, image2, desc }) => {
+export const ProjectsInfoCard = ({ title, image, sub_image, desc, href }) => {
 
     const { useToken } = theme
     const { token } = useToken()
@@ -84,7 +86,7 @@ export const ProjectsInfoCard = ({ title, href, image, image2, desc }) => {
                 </div>
             </div>
             <div className='project-image-1'>
-                <Image src={image2} style={{borderRadius: 2,}}/>
+                <Image src={sub_image} style={{borderRadius: 2,}}/>
             </div>
             <div className='project-description'>
                 {desc}
@@ -93,7 +95,7 @@ export const ProjectsInfoCard = ({ title, href, image, image2, desc }) => {
     )
 }
   
-export const WorkInfoCard = ({ title, date, href, image }) => {
+export const WorkInfoCard = ({ title, image, date, href }) => {
 
     const { useToken } = theme
     const { token } = useToken()
@@ -124,7 +126,7 @@ export const WorkInfoCard = ({ title, date, href, image }) => {
 }
 
 
-export const FooterInfoCard = ({ title, href, image, title_1 }) => {
+export const FooterInfoCard = ({ title, image, href }) => {
 
     const { useToken } = theme
     const { token } = useToken()

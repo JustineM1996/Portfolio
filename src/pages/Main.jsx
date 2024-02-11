@@ -27,7 +27,6 @@ import html5 from '../assets/dev-icon/html5.png'
 import css from '../assets/dev-icon/css.png'
 import mysql from '../assets/dev-icon/mysql.png'
 import reactjs from '../assets/dev-icon/react-js.png'
-
 import nodejs from '../assets/dev-icon/node-js.png'
 import js from '../assets/dev-icon/js.png'
 import antdesign from '../assets/dev-icon/ant-design.png'
@@ -77,14 +76,17 @@ export const MainPage = () => {
             <OverviewInfoCard
               image={website}
               title="Website Development"
+              sub_title="Website Development"
             />
             <OverviewInfoCard
               image={software}
               title="Software Development"
+              sub_title="Software Development"
             />
             <OverviewInfoCard
               image={thirdparty}
               title="Third-Party Integration"
+              sub_title="Third-Party Integration"
             />
           </div>
         </Flex>
@@ -99,41 +101,49 @@ export const MainPage = () => {
             <TechnologyInfoCard
               image={html5}
               title="HTML"
+              sub_title="HTML"
               href="https://www.w3schools.com/html/"
             />
             <TechnologyInfoCard
               image={css}
               title="CSS"
+              sub_title="CSS"
               href="https://www.w3schools.com/css/"
             />
             <TechnologyInfoCard
               image={mysql}
               title="MySql"
+              sub_title="MySql"
               href="https://www.w3schools.com/mysql/"
             />
             <TechnologyInfoCard
               image={reactjs}
               title="React JS"
+              sub_title="React JS"
               href="https://react.dev/"
             />
             <TechnologyInfoCard
               image={nodejs}
               title="Node.js"
+              sub_title="Node.js"
               href="https://nodejs.org/en"
             />
             <TechnologyInfoCard
               image={js}
               title="JavaScript"
+              sub_title="JavaScript"
               href="https://www.javascript.com/"
             />
             <TechnologyInfoCard
               image={antdesign}
               title="Ant Design"
+              sub_title="Ant Design"
               href="https://www.javascript.com/"
             />
             <TechnologyInfoCard
               image={git}
               title="Git"
+              sub_title="Git"
               href="https://www.javascript.com/"
             />
           </div>
@@ -146,16 +156,16 @@ export const MainPage = () => {
           <div className='project' style={style}> P R O J E C T S . </div>
           <div className='project-infocard'>
             <ProjectsInfoCard
-              image={peso}
-              image2={pesopage}
               title="P E S O"
+              image={peso}
+              sub_image={pesopage}
               desc="It is an online employment platform that lists employers, openings, and announcements."
               href=""
             />
             <ProjectsInfoCard
+              title="Coming Soon"
               image={soon}
-              image2=""
-              title="Coming soon"
+              sub_image=""
               desc=""
               href=""
             />
@@ -163,7 +173,7 @@ export const MainPage = () => {
         </Flex>
       </ProCard>
 
-      {/* W O R K E X P E R I E N C E . */}
+      {/* W O R K - E X P E R I E N C E . */}
       <ProCard className='work-experience-page'>
         <Flex className='flex-work-experience-page' justify='center' align='flex-start' vertical>
           <div className='work-experience' style={style}> W O R K - E X P E R I E N C E . </div>
@@ -195,7 +205,7 @@ export const MainPage = () => {
             />
             <FooterInfoCard
               image={email}
-              title="JustineMHilario@gmail.com"
+              title="Gmail"
               href="https://mail.google.com/mail/u/0/#inbox"
             />
             <FooterInfoCard

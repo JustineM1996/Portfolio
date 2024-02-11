@@ -1,12 +1,13 @@
-import React, { useState } from "react";
-import enUS from 'antd/locale/en_US';
+import React, {
+  useState
+} from "react"
 
 import {
   ConfigProvider,
   theme,
   Tooltip,
   FloatButton
-} from "antd";
+} from "antd"
 
 import {
   MoonFilled
@@ -14,18 +15,19 @@ import {
 
 import {
   ProLayout,
-} from "@ant-design/pro-components";
+  PageContainer
+} from "@ant-design/pro-components"
 
 import {
-  defaultSettings,
-} from './configs';
+  defaultSettings
+} from './configs'
 
 import {
   MainPage
 } from './pages/Main.jsx'
 
-import { PageContainer } from "@ant-design/pro-components"
-import background1 from './assets/background/background-1.png'
+import enUS from 'antd/locale/en_US';
+import background from './assets/background/background.png'
 
 function App() {
 
@@ -46,19 +48,19 @@ function App() {
       <ProLayout
         bgLayoutImgList={[
           {
-            src: background1,
+            src: background,
             left: 85,
             bottom: 100,
             height: "303px"
           },
           {
-            src: background1,
+            src: background,
             bottom: -68,
             right: -45,
             height: "303px"
           },
           {
-            src: background1,
+            src: background,
             bottom: 0,
             left: 0,
             width: "331px"
