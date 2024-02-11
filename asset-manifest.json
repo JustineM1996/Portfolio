@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.952eca46.css",
-    "main.js": "/Portfolio/static/js/main.3b79413d.js",
+    "main.css": "/Portfolio/static/css/main.8b56d37c.css",
+    "main.js": "/Portfolio/static/js/main.fbcc46e4.js",
     "static/media/soon.png": "/Portfolio/static/media/soon.2dfc92d41b92cf78e0d7.png",
     "static/media/peso.png": "/Portfolio/static/media/peso.8698bb9a408c9a1e750a.png",
     "static/media/peso-page.png": "/Portfolio/static/media/peso-page.cf7023bc1d61bb158a5c.png",
     "static/media/ant-design.png": "/Portfolio/static/media/ant-design.50dc81550ee20017d2c7.png",
     "static/media/html5.png": "/Portfolio/static/media/html5.1d7b133e22ffe4829da6.png",
-    "static/media/background-1.png": "/Portfolio/static/media/background-1.bc0ef77f69e60af6ab92.png",
+    "static/media/background.png": "/Portfolio/static/media/background.bc0ef77f69e60af6ab92.png",
     "static/media/node-js.png": "/Portfolio/static/media/node-js.bc50142dcaff3c8a3b6b.png",
     "static/media/css.png": "/Portfolio/static/media/css.9407ad358cdb22b8b1f0.png",
     "static/media/mysql.png": "/Portfolio/static/media/mysql.7d8d571e5629923eaf74.png",
@@ -23,11 +23,11 @@
     "static/media/lloyd-laboratoties-inc.jpeg": "/Portfolio/static/media/lloyd-laboratoties-inc.c5be8d978ea56de26298.jpeg",
     "static/media/indeed.webp": "/Portfolio/static/media/indeed.60be9a1ee71f36e7bd2c.webp",
     "index.html": "/Portfolio/index.html",
-    "main.952eca46.css.map": "/Portfolio/static/css/main.952eca46.css.map",
-    "main.3b79413d.js.map": "/Portfolio/static/js/main.3b79413d.js.map"
+    "main.8b56d37c.css.map": "/Portfolio/static/css/main.8b56d37c.css.map",
+    "main.fbcc46e4.js.map": "/Portfolio/static/js/main.fbcc46e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.952eca46.css",
-    "static/js/main.3b79413d.js"
+    "static/css/main.8b56d37c.css",
+    "static/js/main.fbcc46e4.js"
   ]
 }
