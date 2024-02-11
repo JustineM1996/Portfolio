@@ -20,16 +20,18 @@ export const OverviewInfoCard = ({ title, image }) => {
     }
     
     return (
-        <div style={style} className='infocard-overview-page'>
-            <div className='group-overview-page'>
-                <div className='overview-image'>
-                    <Image src={image} style={{borderRadius: 2,}} />
-                </div>
-                <div className='overview-title'>
-                    {title}
+        <Tooltip className='tooltip-overview' placement="bottom" title={title}>
+            <div style={style} className='infocard-overview-page'>
+                <div className='group-overview-page'>
+                    <div className='overview-image'>
+                        <Image src={image} style={{borderRadius: 2,}} />
+                    </div>
+                    <div className='overview-title'>
+                        {title}
+                    </div>
                 </div>
             </div>
-        </div>
+        </Tooltip>
     )
 }
 

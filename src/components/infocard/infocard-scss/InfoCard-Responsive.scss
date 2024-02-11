@@ -324,31 +324,35 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-  .infocard-overview-page {
-    border-radius: 5px;
-    padding: 16px 19px;
-    min-width: 220px;
-    flex: 1px;
-    line-height: 22px;
+  .tooltip-overview {
 
-    .group-overview-page {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    .infocard-overview-page {
+      border-radius: 5px;
+      padding: 16px 19px;
+      min-width: 220px;
+      flex: 1px;
+      line-height: 22px;
 
-      .overview-image {
-        width: 70px;
-        height: 70px;
-        background-size: 100%;
-        padding: 15px 16px;
+      .group-overview-page {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .overview-image {
+          width: 70px;
+          height: 70px;
+          background-size: 100%;
+          padding: 15px 16px;
+        }
+
+        .overview-title {
+          font-size: 16px;
+        }
+
       }
-
-      .overview-title {
-        font-size: 16px;
-      }
-
+        
     }
-      
+  
   }
 
   .infocard-technology-page {
