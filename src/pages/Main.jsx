@@ -12,6 +12,7 @@ import {
 } from "antd"
 
 import {
+  OverviewInfoCard,
   TechnologyInfoCard,
   WorkInfoCard,
   ProjectsInfoCard,
@@ -73,15 +74,15 @@ export const MainPage = () => {
             I'm still willing to learn new things right now in order to expand my programming knowledge and abilities.
           </p>
           <div className='overview-infocard'>
-            <TechnologyInfoCard
+            <OverviewInfoCard
               image={website}
               title="Website Development"
             />
-            <TechnologyInfoCard
+            <OverviewInfoCard
               image={software}
               title="Software Development"
             />
-            <TechnologyInfoCard
+            <OverviewInfoCard
               image={thirdparty}
               title="Third-Party Integration"
             />

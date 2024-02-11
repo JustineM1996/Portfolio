@@ -8,7 +8,32 @@ import {
 
 import React from "react"
 
-export const TechnologyInfoCard = ({ title, image, technology_title }) => {
+export const OverviewInfoCard = ({ title, image }) => {
+
+    const { useToken } = theme
+    const { token } = useToken()
+
+    const style = {
+        backgroundColor: token.colorBgContainer,
+        boxShadow: token.boxShadow,
+        color: token.colorTextSecondary,
+    }
+    
+    return (
+        <div style={style} className='infocard-overview-page'>
+            <div className='group-overview-page'>
+                <div className='overview-image'>
+                    <Image src={image} style={{borderRadius: 2,}} />
+                </div>
+                <div className='overview-title'>
+                    {title}
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export const TechnologyInfoCard = ({ title, image }) => {
 
     const { useToken } = theme
     const { token } = useToken()
@@ -23,11 +48,11 @@ export const TechnologyInfoCard = ({ title, image, technology_title }) => {
         <div style={style} className='infocard-technology-page'>
             <div className='group-technology-page'>
                 <div className='technology-image'>
-                    <Image src={image} preview={false} style={{borderRadius: 2,}} />
+                    <Image src={image} style={{borderRadius: 2,}} />
                 </div>
-                    <div className='technology-title'>
-                        {title}
-                    </div>
+                <div className='technology-title'>
+                    {title}
+                </div>
             </div>
         </div>
     )

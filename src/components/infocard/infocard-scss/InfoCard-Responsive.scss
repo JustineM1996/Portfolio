@@ -1,6 +1,31 @@
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
 
+  .infocard-overview-page {
+    border-radius: 5px;
+    padding: 9px 9px;
+    min-width: 25% auto;
+
+    .group-overview-page {
+      display: flex;
+      align-items: center;
+      gap: 0px;
+
+      .overview-image {
+        width: 40px;
+        height: 40px;
+        background-size: 100%;
+        padding: 8px 6px;
+      }
+      
+      .overview-title {
+        font-size:0px;
+      }
+
+    }
+
+  }
+
   .infocard-technology-page {
     border-radius: 5px;
     padding: 9px 9px;
@@ -136,6 +161,31 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
+  .infocard-overview-page {
+    border-radius: 5px;
+    padding: 9px 9px;
+    min-width: 25% auto;
+
+    .group-overview-page {
+      display: flex;
+      align-items: center;
+      gap: 0px;
+
+      .overview-image {
+        width: 40px;
+        height: 40px;
+        background-size: 100%;
+        padding: 8px 6px;
+      }
+
+      .overview-title {
+        font-size:0px;
+      }
+
+    }
+  
+  }
 
   .infocard-technology-page {
     border-radius: 5px;
@@ -273,6 +323,33 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
+  .infocard-overview-page {
+    border-radius: 5px;
+    padding: 16px 19px;
+    min-width: 220px;
+    flex: 1px;
+    line-height: 22px;
+
+    .group-overview-page {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .overview-image {
+        width: 70px;
+        height: 70px;
+        background-size: 100%;
+        padding: 15px 16px;
+      }
+
+      .overview-title {
+        font-size: 16px;
+      }
+
+    }
+      
+  }
 
   .infocard-technology-page {
     border-radius: 5px;

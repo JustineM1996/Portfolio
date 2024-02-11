@@ -1,4 +1,5 @@
-import { 
+import {
+    OverviewInfoCard,
     TechnologyInfoCard,
     ProjectsInfoCard,
     WorkInfoCard,
@@ -6,6 +7,7 @@ import {
 } from './infocard';
 
 export {
+    OverviewInfoCard,
     TechnologyInfoCard,
     ProjectsInfoCard,
     WorkInfoCard,

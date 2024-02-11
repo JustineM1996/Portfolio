@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import enUS from 'antd/locale/en_US';
 
 import {
   ConfigProvider,
@@ -38,6 +39,7 @@ function App() {
       theme={{
         algorithm: isDarkMode ? darkAlgorithm : defaultAlgorithm,
       }}
+      locale={enUS}
     >
       <ProLayout
         bgLayoutImgList={[
@@ -63,21 +65,8 @@ function App() {
         token={{
           header: {
             colorBgHeader: 'hide',
-            colorBgScrollHeader: 'hide',
-            colorHeaderTitle: 'hide',
-            colorBgMenuItemHover: 'hide',
-            colorBgMenuElevated: 'hide',
-            colorBgMenuItemSelected: 'hide',
-            colorTextMenuSelected: 'hide',
-            colorTextMenuActive: 'hide',
-            colorTextMenu: 'hide',
-            colorTextMenuSecondary: 'hide',
-            colorBgRightActionsItemHover: 'hide',
-            colorTextRightActionsItem: 'hide',
-            heightLayoutHeader: -100,
           },
         }}
-        prefixCls="my-prefix"
         disableMobile={true}
         {...defaultSettings}
       >
