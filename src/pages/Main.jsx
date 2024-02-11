@@ -39,11 +39,11 @@ import soon from '../assets/project-icon/soon.png'
 import gpnextsolutioninc from '../assets/company-icon/gp-next-solution-inc.png'
 import lloydlaboratoriesinc from '../assets/company-icon/lloyd-laboratoties-inc.jpeg'
 
+import logo from '../assets/social-icon/logo.png'
 import email from '../assets/social-icon/email.png'
 import facebook from '../assets/social-icon/facebook.png'
 import github from '../assets/social-icon/github.png'
-import indeed from '../assets/social-icon/indeed.png'
-import logo from '../assets/social-icon/logo.png'
+import indeed from '../assets/social-icon/indeed.webp'
 
 export const MainPage = () => {
 
