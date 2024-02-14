@@ -206,6 +206,7 @@ export const MainPage = () => {
             <FooterInfoCard
               image={email}
               title="Gmail"
+              sub_title="JustineMHilario@gmail.com"
               href="https://mail.google.com/mail/u/0/#inbox"
             />
             <FooterInfoCard

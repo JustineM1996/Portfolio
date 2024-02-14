@@ -20,18 +20,16 @@ export const OverviewInfoCard = ({ title, sub_title, image }) => {
     }
     
     return (
-        <Tooltip className='tooltip-overview' placement="bottom" title={sub_title}>
-            <div style={style} className='infocard-overview-page'>
+        <div style={style} className='infocard-overview-page'>
                 <div className='group-overview-page'>
                     <div className='overview-image'>
-                        <Image src={image} style={{borderRadius: 2,}} />
+                        <Image src={image}/>
                     </div>
                     <div className='overview-title'>
                         {title}
                     </div>
                 </div>
-            </div>
-        </Tooltip>
+        </div>
     )
 }
 
@@ -47,18 +45,17 @@ export const TechnologyInfoCard = ({ title, sub_title, image }) => {
     }
     
     return (
-        <Tooltip className='tooltip-technology' placement="bottom" title={sub_title}>
-            <div style={style} className='infocard-technology-page'>
+        <div style={style} className='infocard-technology-page'>
                 <div className='group-technology-page'>
                     <div className='technology-image'>
-                        <Image src={image} style={{borderRadius: 2,}} />
+                        <Image src={image}/>
                     </div>
                     <div className='technology-title'>
                         {title}
                     </div>
                 </div>
-            </div>
-        </Tooltip>
+        </div>
+        
     )
 }
 
@@ -77,7 +74,7 @@ export const ProjectsInfoCard = ({ title, image, sub_image, desc, href }) => {
         <div style={style} className='infocard-project-page'>
             <div className='group-project-page'>
                 <div className='project-image'>
-                    <Image src={image} style={{borderRadius: 2,}}/>
+                    <Image src={image}/>
                 </div>
                 <div className='project-title'>
                     <a href={href} target="_blank" rel="noreferrer" style={{color: token.colorText,}} >
@@ -86,7 +83,7 @@ export const ProjectsInfoCard = ({ title, image, sub_image, desc, href }) => {
                 </div>
             </div>
             <div className='project-image-1'>
-                <Image src={sub_image} style={{borderRadius: 2,}}/>
+                <Image src={sub_image}/>
             </div>
             <div className='project-description'>
                 {desc}
@@ -110,7 +107,7 @@ export const WorkInfoCard = ({ title, image, date, href }) => {
         <div style={style} className='infocard-work-experience-page'>
             <div className='group-work-experience-page'>
                 <div className='work-experience-image'>
-                    <Image src={image} style={{borderRadius: 2,}}/>
+                    <Image src={image}/>
                 </div>
                 <div className='work-experience-title'>
                     <a href={href} target="_blank" rel="noreferrer" style={{color: token.colorText,}} >
@@ -126,7 +123,7 @@ export const WorkInfoCard = ({ title, image, date, href }) => {
 }
 
 
-export const FooterInfoCard = ({ title, image, href }) => {
+export const FooterInfoCard = ({ title, sub_title, image, href }) => {
 
     const { useToken } = theme
     const { token } = useToken()
